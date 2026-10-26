@@ -1,0 +1,8 @@
+.env
+.wrangler
+.venv
+tmp/
+
+__pycache__/
+*.pyc
+dist/sources_page/
