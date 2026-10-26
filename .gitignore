@@ -6,3 +6,9 @@ tmp/
 __pycache__/
 *.pyc
 dist/sources_page/
+
+# Dart
+.dart_tool/
+# What the build scripts write before publish.dart checks it.
+build/
+_site/

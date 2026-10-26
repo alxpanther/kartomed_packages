@@ -1,0 +1,114 @@
+[
+ {
+  "key": "general",
+  "names": {
+   "uk": "Загальні",
+   "ru": "Общие",
+   "en": "General"
+  }
+ },
+ {
+  "key": "pain",
+  "names": {
+   "uk": "Біль",
+   "ru": "Боль",
+   "en": "Pain"
+  }
+ },
+ {
+  "key": "nervous",
+  "names": {
+   "uk": "Нервова система і сон",
+   "ru": "Нервная система и сон",
+   "en": "Nerves and sleep"
+  }
+ },
+ {
+  "key": "mood",
+  "names": {
+   "uk": "Настрій",
+   "ru": "Настроение",
+   "en": "Mood"
+  }
+ },
+ {
+  "key": "ent",
+  "names": {
+   "uk": "Вухо, горло, ніс, рот",
+   "ru": "Ухо, горло, нос, рот",
+   "en": "Ear, nose, throat, mouth"
+  }
+ },
+ {
+  "key": "respiratory",
+  "names": {
+   "uk": "Дихання",
+   "ru": "Дыхание",
+   "en": "Breathing"
+  }
+ },
+ {
+  "key": "heart",
+  "names": {
+   "uk": "Серце і судини",
+   "ru": "Сердце и сосуды",
+   "en": "Heart and blood vessels"
+  }
+ },
+ {
+  "key": "digestive",
+  "names": {
+   "uk": "Травлення",
+   "ru": "Пищеварение",
+   "en": "Digestion"
+  }
+ },
+ {
+  "key": "urinary",
+  "names": {
+   "uk": "Сечовипускання",
+   "ru": "Мочеиспускание",
+   "en": "Urination"
+  }
+ },
+ {
+  "key": "reproductive",
+  "names": {
+   "uk": "Жіноче і чоловіче здоров'я",
+   "ru": "Женское и мужское здоровье",
+   "en": "Women's and men's health"
+  }
+ },
+ {
+  "key": "skin",
+  "names": {
+   "uk": "Шкіра, волосся, нігті",
+   "ru": "Кожа, волосы, ногти",
+   "en": "Skin, hair, nails"
+  }
+ },
+ {
+  "key": "musculoskeletal",
+  "names": {
+   "uk": "Суглоби і м'язи",
+   "ru": "Суставы и мышцы",
+   "en": "Joints and muscles"
+  }
+ },
+ {
+  "key": "eyes",
+  "names": {
+   "uk": "Очі",
+   "ru": "Глаза",
+   "en": "Eyes"
+  }
+ },
+ {
+  "key": "children",
+  "names": {
+   "uk": "Діти",
+   "ru": "Дети",
+   "en": "Children"
+  }
+ }
+]

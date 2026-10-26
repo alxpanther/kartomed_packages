@@ -1,0 +1,24 @@
+{
+  "_comment": "Units of medicines. `strength`: a unit of the amount of a substance in a dose form (read from the registry by `match`, a Ukrainian regular expression). `dose`: a unit the user takes a medicine in (courses, roadmap stage 9). `names`: short forms the application shows.",
+  "units": [
+    {"key": "mg", "kinds": ["strength", "dose"], "match": "мг", "names": {"uk": "мг", "ru": "мг", "en": "mg"}},
+    {"key": "mcg", "kinds": ["strength", "dose"], "match": "мкг", "names": {"uk": "мкг", "ru": "мкг", "en": "mcg"}},
+    {"key": "g", "kinds": ["strength", "dose"], "match": "г", "names": {"uk": "г", "ru": "г", "en": "g"}},
+    {"key": "ml", "kinds": ["strength", "dose"], "match": "мл", "names": {"uk": "мл", "ru": "мл", "en": "ml"}},
+    {"key": "iu", "kinds": ["strength", "dose"], "match": "МО|ME", "names": {"uk": "МО", "ru": "МЕ", "en": "IU"}},
+    {"key": "unit", "kinds": ["strength", "dose"], "match": "ОД|Од", "names": {"uk": "ОД", "ru": "ЕД", "en": "U"}},
+    {"key": "percent", "kinds": ["strength"], "match": "%", "names": {"uk": "%", "ru": "%", "en": "%"}},
+    {"key": "mmol", "kinds": ["strength"], "match": "ммоль", "names": {"uk": "ммоль", "ru": "ммоль", "en": "mmol"}},
+    {"key": "dose", "kinds": ["strength", "dose"], "match": "доз[аиу]", "names": {"uk": "доза", "ru": "доза", "en": "dose"}},
+    {"key": "drop", "kinds": ["dose"], "names": {"uk": "крапля", "ru": "капля", "en": "drop"}},
+    {"key": "tablet", "kinds": ["dose"], "names": {"uk": "таблетка", "ru": "таблетка", "en": "tablet"}},
+    {"key": "capsule", "kinds": ["dose"], "names": {"uk": "капсула", "ru": "капсула", "en": "capsule"}},
+    {"key": "sachet", "kinds": ["dose"], "names": {"uk": "пакетик", "ru": "пакетик", "en": "sachet"}},
+    {"key": "suppository", "kinds": ["dose"], "names": {"uk": "супозиторій", "ru": "суппозиторий", "en": "suppository"}},
+    {"key": "puff", "kinds": ["dose"], "names": {"uk": "впорскування", "ru": "впрыскивание", "en": "puff"}},
+    {"key": "ampoule", "kinds": ["dose"], "names": {"uk": "ампула", "ru": "ампула", "en": "ampoule"}},
+    {"key": "teaspoon", "kinds": ["dose"], "names": {"uk": "чайна ложка", "ru": "чайная ложка", "en": "teaspoon"}},
+    {"key": "tablespoon", "kinds": ["dose"], "names": {"uk": "столова ложка", "ru": "столовая ложка", "en": "tablespoon"}},
+    {"key": "application", "kinds": ["dose"], "names": {"uk": "нанесення", "ru": "нанесение", "en": "application"}}
+  ]
+}

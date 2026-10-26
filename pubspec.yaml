@@ -1,0 +1,16 @@
+name: kartomed_packages
+description: >-
+  The data packages of the Kartomed application, built from open sources and
+  published for download: the dictionaries (diagnoses, medicines, our lists).
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  collection: ^1.19.1
+  crypto: ^3.0.8
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.31.1

@@ -1,0 +1,574 @@
+{
+ "forms": [
+  {
+   "key": "tablet_effervescent",
+   "names": {
+    "uk": "таблетки шипучі",
+    "ru": "таблетки шипучие",
+    "en": "effervescent tablets"
+   }
+  },
+  {
+   "key": "tablet_chewable",
+   "names": {
+    "uk": "таблетки жувальні",
+    "ru": "таблетки жевательные",
+    "en": "chewable tablets"
+   }
+  },
+  {
+   "key": "tablet_sublingual",
+   "names": {
+    "uk": "таблетки під язик",
+    "ru": "таблетки подъязычные",
+    "en": "sublingual tablets"
+   }
+  },
+  {
+   "key": "tablet_orodispersible",
+   "names": {
+    "uk": "таблетки, що розчиняються в роті",
+    "ru": "таблетки, диспергируемые во рту",
+    "en": "orodispersible tablets"
+   }
+  },
+  {
+   "key": "tablet_vaginal",
+   "names": {
+    "uk": "таблетки вагінальні",
+    "ru": "таблетки вагинальные",
+    "en": "vaginal tablets"
+   }
+  },
+  {
+   "key": "tablet_prolonged",
+   "names": {
+    "uk": "таблетки пролонгованої дії",
+    "ru": "таблетки пролонгированного действия",
+    "en": "prolonged-release tablets"
+   }
+  },
+  {
+   "key": "tablet_enteric",
+   "names": {
+    "uk": "таблетки кишковорозчинні",
+    "ru": "таблетки кишечнорастворимые",
+    "en": "gastro-resistant tablets"
+   }
+  },
+  {
+   "key": "tablet_coated",
+   "names": {
+    "uk": "таблетки, вкриті оболонкою",
+    "ru": "таблетки, покрытые оболочкой",
+    "en": "coated tablets"
+   }
+  },
+  {
+   "key": "tablet",
+   "names": {
+    "uk": "таблетки",
+    "ru": "таблетки",
+    "en": "tablets"
+   }
+  },
+  {
+   "key": "capsule_vaginal",
+   "names": {
+    "uk": "капсули вагінальні",
+    "ru": "капсулы вагинальные",
+    "en": "vaginal capsules"
+   }
+  },
+  {
+   "key": "capsule_inhalation",
+   "names": {
+    "uk": "капсули для інгаляцій",
+    "ru": "капсулы для ингаляций",
+    "en": "inhalation capsules"
+   }
+  },
+  {
+   "key": "capsule_prolonged",
+   "names": {
+    "uk": "капсули пролонгованої дії",
+    "ru": "капсулы пролонгированного действия",
+    "en": "modified-release capsules"
+   }
+  },
+  {
+   "key": "capsule",
+   "names": {
+    "uk": "капсули",
+    "ru": "капсулы",
+    "en": "capsules"
+   }
+  },
+  {
+   "key": "lozenge",
+   "names": {
+    "uk": "льодяники",
+    "ru": "леденцы",
+    "en": "lozenges"
+   }
+  },
+  {
+   "key": "eye_ointment",
+   "names": {
+    "uk": "мазь очна",
+    "ru": "мазь глазная",
+    "en": "eye ointment"
+   }
+  },
+  {
+   "key": "eye_gel",
+   "names": {
+    "uk": "гель очний",
+    "ru": "гель глазной",
+    "en": "eye gel"
+   }
+  },
+  {
+   "key": "eye_drops",
+   "names": {
+    "uk": "краплі очні",
+    "ru": "капли глазные",
+    "en": "eye drops"
+   }
+  },
+  {
+   "key": "ear_drops",
+   "names": {
+    "uk": "краплі вушні",
+    "ru": "капли ушные",
+    "en": "ear drops"
+   }
+  },
+  {
+   "key": "nasal_spray",
+   "names": {
+    "uk": "спрей назальний",
+    "ru": "спрей назальный",
+    "en": "nasal spray"
+   }
+  },
+  {
+   "key": "nasal_drops",
+   "names": {
+    "uk": "краплі назальні",
+    "ru": "капли назальные",
+    "en": "nasal drops"
+   }
+  },
+  {
+   "key": "inhalation",
+   "names": {
+    "uk": "для інгаляцій",
+    "ru": "для ингаляций",
+    "en": "for inhalation"
+   }
+  },
+  {
+   "key": "powder_injection",
+   "names": {
+    "uk": "порошок для розчину для ін'єкцій",
+    "ru": "порошок для приготовления раствора для инъекций",
+    "en": "powder for solution for injection"
+   }
+  },
+  {
+   "key": "infusion",
+   "names": {
+    "uk": "розчин для інфузій",
+    "ru": "раствор для инфузий",
+    "en": "solution for infusion"
+   }
+  },
+  {
+   "key": "injection",
+   "names": {
+    "uk": "розчин для ін'єкцій",
+    "ru": "раствор для инъекций",
+    "en": "solution for injection"
+   }
+  },
+  {
+   "key": "oral_spray",
+   "names": {
+    "uk": "спрей для ротової порожнини",
+    "ru": "спрей для полости рта",
+    "en": "oromucosal spray"
+   }
+  },
+  {
+   "key": "spray",
+   "names": {
+    "uk": "спрей",
+    "ru": "спрей",
+    "en": "spray"
+   }
+  },
+  {
+   "key": "syrup",
+   "names": {
+    "uk": "сироп",
+    "ru": "сироп",
+    "en": "syrup"
+   }
+  },
+  {
+   "key": "suspension",
+   "names": {
+    "uk": "суспензія",
+    "ru": "суспензия",
+    "en": "suspension"
+   }
+  },
+  {
+   "key": "oral_drops",
+   "names": {
+    "uk": "краплі",
+    "ru": "капли",
+    "en": "drops"
+   }
+  },
+  {
+   "key": "oral_solution",
+   "names": {
+    "uk": "розчин для прийому всередину",
+    "ru": "раствор для приема внутрь",
+    "en": "oral solution"
+   }
+  },
+  {
+   "key": "granules",
+   "names": {
+    "uk": "гранули",
+    "ru": "гранулы",
+    "en": "granules"
+   }
+  },
+  {
+   "key": "powder",
+   "names": {
+    "uk": "порошок",
+    "ru": "порошок",
+    "en": "powder"
+   }
+  },
+  {
+   "key": "suppository_vaginal",
+   "names": {
+    "uk": "супозиторії вагінальні",
+    "ru": "суппозитории вагинальные",
+    "en": "vaginal suppositories"
+   }
+  },
+  {
+   "key": "suppository",
+   "names": {
+    "uk": "супозиторії ректальні",
+    "ru": "суппозитории ректальные",
+    "en": "suppositories"
+   }
+  },
+  {
+   "key": "ointment",
+   "names": {
+    "uk": "мазь",
+    "ru": "мазь",
+    "en": "ointment"
+   }
+  },
+  {
+   "key": "cream",
+   "names": {
+    "uk": "крем",
+    "ru": "крем",
+    "en": "cream"
+   }
+  },
+  {
+   "key": "gel",
+   "names": {
+    "uk": "гель",
+    "ru": "гель",
+    "en": "gel"
+   }
+  },
+  {
+   "key": "patch",
+   "names": {
+    "uk": "пластир",
+    "ru": "пластырь",
+    "en": "patch"
+   }
+  },
+  {
+   "key": "emulsion",
+   "names": {
+    "uk": "емульсія",
+    "ru": "эмульсия",
+    "en": "emulsion"
+   }
+  },
+  {
+   "key": "solution_external",
+   "names": {
+    "uk": "засіб для зовнішнього застосування",
+    "ru": "средство для наружного применения",
+    "en": "for external use"
+   }
+  },
+  {
+   "key": "tincture",
+   "names": {
+    "uk": "настойка",
+    "ru": "настойка",
+    "en": "tincture"
+   }
+  },
+  {
+   "key": "herbal",
+   "names": {
+    "uk": "лікарська рослинна сировина",
+    "ru": "лекарственное растительное сырье",
+    "en": "herbal material"
+   }
+  },
+  {
+   "key": "solution",
+   "names": {
+    "uk": "розчин",
+    "ru": "раствор",
+    "en": "solution"
+   }
+  },
+  {
+   "key": "other",
+   "names": {
+    "uk": "інша форма",
+    "ru": "другая форма",
+    "en": "other form"
+   }
+  }
+ ],
+ "units": [
+  {
+   "key": "mg",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "мг",
+    "ru": "мг",
+    "en": "mg"
+   }
+  },
+  {
+   "key": "mcg",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "мкг",
+    "ru": "мкг",
+    "en": "mcg"
+   }
+  },
+  {
+   "key": "g",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "г",
+    "ru": "г",
+    "en": "g"
+   }
+  },
+  {
+   "key": "ml",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "мл",
+    "ru": "мл",
+    "en": "ml"
+   }
+  },
+  {
+   "key": "iu",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "МО",
+    "ru": "МЕ",
+    "en": "IU"
+   }
+  },
+  {
+   "key": "unit",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "ОД",
+    "ru": "ЕД",
+    "en": "U"
+   }
+  },
+  {
+   "key": "percent",
+   "kinds": [
+    "strength"
+   ],
+   "names": {
+    "uk": "%",
+    "ru": "%",
+    "en": "%"
+   }
+  },
+  {
+   "key": "mmol",
+   "kinds": [
+    "strength"
+   ],
+   "names": {
+    "uk": "ммоль",
+    "ru": "ммоль",
+    "en": "mmol"
+   }
+  },
+  {
+   "key": "dose",
+   "kinds": [
+    "strength",
+    "dose"
+   ],
+   "names": {
+    "uk": "доза",
+    "ru": "доза",
+    "en": "dose"
+   }
+  },
+  {
+   "key": "drop",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "крапля",
+    "ru": "капля",
+    "en": "drop"
+   }
+  },
+  {
+   "key": "tablet",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "таблетка",
+    "ru": "таблетка",
+    "en": "tablet"
+   }
+  },
+  {
+   "key": "capsule",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "капсула",
+    "ru": "капсула",
+    "en": "capsule"
+   }
+  },
+  {
+   "key": "sachet",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "пакетик",
+    "ru": "пакетик",
+    "en": "sachet"
+   }
+  },
+  {
+   "key": "suppository",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "супозиторій",
+    "ru": "суппозиторий",
+    "en": "suppository"
+   }
+  },
+  {
+   "key": "puff",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "впорскування",
+    "ru": "впрыскивание",
+    "en": "puff"
+   }
+  },
+  {
+   "key": "ampoule",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "ампула",
+    "ru": "ампула",
+    "en": "ampoule"
+   }
+  },
+  {
+   "key": "teaspoon",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "чайна ложка",
+    "ru": "чайная ложка",
+    "en": "teaspoon"
+   }
+  },
+  {
+   "key": "tablespoon",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "столова ложка",
+    "ru": "столовая ложка",
+    "en": "tablespoon"
+   }
+  },
+  {
+   "key": "application",
+   "kinds": [
+    "dose"
+   ],
+   "names": {
+    "uk": "нанесення",
+    "ru": "нанесение",
+    "en": "application"
+   }
+  }
+ ]
+}

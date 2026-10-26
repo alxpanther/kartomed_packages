@@ -1,0 +1,20 @@
+{
+  "_comment": "Catalog of medicines: the first level of the anatomical therapeutic chemical grouping, in our own words. `other`: medicines without a group.",
+  "groups": [
+    {"key": "A", "names": {"uk": "Травлення та обмін речовин", "ru": "Пищеварение и обмен веществ", "en": "Digestion and metabolism"}},
+    {"key": "B", "names": {"uk": "Кров і кровотворення", "ru": "Кровь и кроветворение", "en": "Blood and blood-forming organs"}},
+    {"key": "C", "names": {"uk": "Серце та судини", "ru": "Сердце и сосуды", "en": "Heart and blood vessels"}},
+    {"key": "D", "names": {"uk": "Шкіра", "ru": "Кожа", "en": "Skin"}},
+    {"key": "G", "names": {"uk": "Сечостатева система та статеві гормони", "ru": "Мочеполовая система и половые гормоны", "en": "Genitourinary system and sex hormones"}},
+    {"key": "H", "names": {"uk": "Гормони (крім статевих та інсулінів)", "ru": "Гормоны (кроме половых и инсулинов)", "en": "Hormones (except sex hormones and insulins)"}},
+    {"key": "J", "names": {"uk": "Протимікробні засоби та вакцини", "ru": "Противомикробные средства и вакцины", "en": "Anti-infectives and vaccines"}},
+    {"key": "L", "names": {"uk": "Протипухлинні засоби та імуномодулятори", "ru": "Противоопухолевые средства и иммуномодуляторы", "en": "Antineoplastic and immunomodulating agents"}},
+    {"key": "M", "names": {"uk": "Кістки, м'язи та суглоби", "ru": "Кости, мышцы и суставы", "en": "Bones, muscles and joints"}},
+    {"key": "N", "names": {"uk": "Нервова система", "ru": "Нервная система", "en": "Nervous system"}},
+    {"key": "P", "names": {"uk": "Протипаразитарні засоби", "ru": "Противопаразитарные средства", "en": "Antiparasitic products"}},
+    {"key": "R", "names": {"uk": "Дихальна система", "ru": "Дыхательная система", "en": "Respiratory system"}},
+    {"key": "S", "names": {"uk": "Очі та вуха", "ru": "Глаза и уши", "en": "Eyes and ears"}},
+    {"key": "V", "names": {"uk": "Інші засоби", "ru": "Прочие средства", "en": "Various"}},
+    {"key": "other", "names": {"uk": "Без групи", "ru": "Без группы", "en": "No group"}}
+  ]
+}

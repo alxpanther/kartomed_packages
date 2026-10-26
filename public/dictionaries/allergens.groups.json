@@ -1,0 +1,50 @@
+[
+ {
+  "key": "food",
+  "names": {
+   "uk": "Їжа",
+   "ru": "Еда",
+   "en": "Food"
+  }
+ },
+ {
+  "key": "medicine",
+  "names": {
+   "uk": "Ліки",
+   "ru": "Лекарства",
+   "en": "Medicines"
+  }
+ },
+ {
+  "key": "pollen",
+  "names": {
+   "uk": "Пилок рослин",
+   "ru": "Пыльца растений",
+   "en": "Pollen"
+  }
+ },
+ {
+  "key": "animals",
+  "names": {
+   "uk": "Тварини",
+   "ru": "Животные",
+   "en": "Animals"
+  }
+ },
+ {
+  "key": "insects",
+  "names": {
+   "uk": "Комахи",
+   "ru": "Насекомые",
+   "en": "Insects"
+  }
+ },
+ {
+  "key": "household",
+  "names": {
+   "uk": "Побут і матеріали",
+   "ru": "Быт и материалы",
+   "en": "Home and materials"
+  }
+ }
+]

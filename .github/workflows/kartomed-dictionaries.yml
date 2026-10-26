@@ -1,0 +1,180 @@
+name: Kartomed dictionaries
+
+# Builds the dictionaries of the Kartomed application from their official
+# sources once a month (and on demand), checks them against the published
+# ones and, when any of them changed, commits public/ and publishes it on
+# both hosts the application reads: the Cloudflare R2 bucket `kartomed`
+# (https://kartomed.foleks.com/) first, GitHub Pages
+# (https://alxpanther.github.io/kartomed_packages/) as its copy.
+#
+# A push that changes public/ by hand (a fix, a revert) publishes it without
+# building. A failed run, and a warning of the build (an old Russian
+# edition), goes to Telegram.
+
+on:
+  schedule:
+    # The 5th: the medicines register is usually republished in the first
+    # days of a month.
+    - cron: '0 6 5 * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - '.github/workflows/kartomed-dictionaries.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never two runs pushing to main or deploying Pages at once.
+concurrency:
+  group: kartomed-dictionaries
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # The date of the owner's Russian export comes from git history.
+          fetch-depth: 0
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install the tools of the build
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils unzip
+
+      - run: dart pub get
+
+      - name: Check the scripts
+        run: |
+          dart analyze --fatal-infos
+          dart test
+
+      - name: Build, check and publish into public/
+        run: ./build_dictionaries.sh
+
+      - name: Send the warnings of the build
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          [ -s build/warnings.txt ] || exit 0
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed dictionaries: warning
+          $(cat build/warnings.txt)"
+
+      - name: Commit public/ (if changed)
+        id: commit
+        run: |
+          git add public
+          if git diff --staged --quiet; then
+            echo "Nothing changed, nothing to publish."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update the Kartomed dictionaries [skip ci]"
+          # The branch may have moved on while the build ran.
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed, retrying..."
+            sleep 10
+          done
+          echo "Could not push the dictionaries after 3 attempts." >&2
+          exit 1
+
+      - name: Send the errors of the build
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed dictionaries: the build failed, nothing was published.
+          $(cat build/errors.txt 2>/dev/null)
+          ${RUN_URL}"
+
+  publish:
+    needs: build
+    # A push publishes by itself (the build is skipped); a build only when it
+    # committed something.
+    if: >-
+      always() &&
+      (github.event_name == 'push' || needs.build.outputs.changed == 'true')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # The commit the build has just pushed.
+          ref: main
+
+      - name: Upload to Cloudflare R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          put() {
+            echo "Uploading $1"
+            wrangler r2 object put "kartomed/$1" --file="public/$1" \
+              --content-type="$2" --cache-control="no-cache" --remote
+          }
+          for file in public/dictionaries/*; do
+            name="dictionaries/$(basename "$file")"
+            case "$name" in
+              */manifest.json) continue ;;
+              *.gz) put "$name" "application/gzip" ;;
+              *) put "$name" "application/json; charset=utf-8" ;;
+            esac
+          done
+          put index.html "text/html; charset=utf-8"
+          put index.css "text/css; charset=utf-8"
+          # Last: a phone that reads the new manifest finds every file it
+          # names already in place.
+          put dictionaries/manifest.json "application/json; charset=utf-8"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: pages
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [build, publish]
+    if: always() && needs.publish.result == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send the error of the publication
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed dictionaries: the publication failed.
+          ${RUN_URL}"

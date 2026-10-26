@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "built": "2026-10-26T14:49:43Z",
+  "dictionaries": {
+    "allergens": {
+      "type": "al",
+      "version": "4e8b295d4ba71ac2",
+      "count": 72
+    },
+    "diagnoses": {
+      "type": "dx",
+      "version": "4441fb1836e2e65f",
+      "count": 22126
+    },
+    "medicines": {
+      "type": "rx",
+      "version": "bceb23929d39ac64",
+      "count": 8479
+    },
+    "specialties": {
+      "type": "sp",
+      "version": "37be6d8b6072c777",
+      "count": 54
+    },
+    "symptoms": {
+      "type": "sx",
+      "version": "dac1ed173ab2fd61",
+      "count": 150
+    },
+    "vaccines": {
+      "type": "vx",
+      "version": "c5c495a24f07bef5",
+      "count": 40
+    }
+  },
+  "files": {
+    "allergens.groups.json": {
+      "size": 754,
+      "sha256": "9c475a26f4e6ccfec7d5f6a7d58c19c3a31096863607521fe0144032520f9643"
+    },
+    "allergens.json.gz": {
+      "size": 3636,
+      "sha256": "1ccc80387ab910f93841beaccaff0feccf3e008b145cf5544062bf8400bb56a9"
+    },
+    "diagnoses.groups.json": {
+      "size": 101410,
+      "sha256": "84a8581d3986e049ba3cd91ce9ba08f7049907b8c7ed8a431e4a6c1ad897087a"
+    },
+    "diagnoses.json.gz": {
+      "size": 630805,
+      "sha256": "1c3e9ea80c5b9a24586a86c0eeaa7385979337a6ae11669f490600280f6d651c"
+    },
+    "dosage.json": {
+      "size": 10334,
+      "sha256": "4430154e53a28e878bad8318b9c29a261d8111172e80687ac2ab9847c5059f89"
+    },
+    "medicines.groups.json": {
+      "size": 2941,
+      "sha256": "d04c22c90293f7b65ca695d0784292d275f266d2ba7127396723b18332732ef2"
+    },
+    "medicines.json.gz": {
+      "size": 830350,
+      "sha256": "5cb33f90e0a3878af3d7e6a640f0631dcb7e35d0a9f8d1333e8fecf2a2b43e12"
+    },
+    "specialties.groups.json": {
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "specialties.json.gz": {
+      "size": 2122,
+      "sha256": "9d60ccf2677cd4300c185b2a2523292ead96e9ba790c4cfa6af6814a57c53ae6"
+    },
+    "symptoms.groups.json": {
+      "size": 1986,
+      "sha256": "60cfe396d3e7141d98d03fb4d7b7fcadec0dbda41cc9713a68d3b1abf92db094"
+    },
+    "symptoms.json.gz": {
+      "size": 8273,
+      "sha256": "809373c8fe957b3c8c06e3b7acd6e7da53f0b8358e8b0496ed217ad5ddf51922"
+    },
+    "vaccine_diseases.json": {
+      "size": 4002,
+      "sha256": "aac9a9b33ea89f88e036faab2674d1b4886c7638c214180820971f9fc4675aec"
+    },
+    "vaccines.groups.json": {
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "vaccines.json.gz": {
+      "size": 3277,
+      "sha256": "75db4390fcef8ccf5516a2a1855eba256198bc0e56b557bee6fe76b8b58097fc"
+    }
+  }
+}

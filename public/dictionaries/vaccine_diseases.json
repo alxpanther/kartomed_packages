@@ -1,0 +1,218 @@
+[
+ {
+  "key": "diphtheria",
+  "names": {
+   "uk": "дифтерія",
+   "ru": "дифтерия",
+   "en": "diphtheria"
+  }
+ },
+ {
+  "key": "tetanus",
+  "names": {
+   "uk": "правець",
+   "ru": "столбняк",
+   "en": "tetanus"
+  }
+ },
+ {
+  "key": "pertussis",
+  "names": {
+   "uk": "кашлюк",
+   "ru": "коклюш",
+   "en": "whooping cough"
+  }
+ },
+ {
+  "key": "polio",
+  "names": {
+   "uk": "поліомієліт",
+   "ru": "полиомиелит",
+   "en": "polio"
+  }
+ },
+ {
+  "key": "hib",
+  "names": {
+   "uk": "гемофільна інфекція",
+   "ru": "гемофильная инфекция",
+   "en": "Haemophilus influenzae type b"
+  }
+ },
+ {
+  "key": "hepatitis_b",
+  "names": {
+   "uk": "гепатит B",
+   "ru": "гепатит B",
+   "en": "hepatitis B"
+  }
+ },
+ {
+  "key": "hepatitis_a",
+  "names": {
+   "uk": "гепатит A",
+   "ru": "гепатит A",
+   "en": "hepatitis A"
+  }
+ },
+ {
+  "key": "measles",
+  "names": {
+   "uk": "кір",
+   "ru": "корь",
+   "en": "measles"
+  }
+ },
+ {
+  "key": "mumps",
+  "names": {
+   "uk": "епідемічний паротит",
+   "ru": "эпидемический паротит",
+   "en": "mumps"
+  }
+ },
+ {
+  "key": "rubella",
+  "names": {
+   "uk": "краснуха",
+   "ru": "краснуха",
+   "en": "rubella"
+  }
+ },
+ {
+  "key": "varicella",
+  "names": {
+   "uk": "вітряна віспа",
+   "ru": "ветряная оспа",
+   "en": "chickenpox"
+  }
+ },
+ {
+  "key": "herpes_zoster",
+  "names": {
+   "uk": "оперізуючий герпес",
+   "ru": "опоясывающий герпес",
+   "en": "shingles"
+  }
+ },
+ {
+  "key": "tuberculosis",
+  "names": {
+   "uk": "туберкульоз",
+   "ru": "туберкулез",
+   "en": "tuberculosis"
+  }
+ },
+ {
+  "key": "pneumococcus",
+  "names": {
+   "uk": "пневмококова інфекція",
+   "ru": "пневмококковая инфекция",
+   "en": "pneumococcal disease"
+  }
+ },
+ {
+  "key": "meningococcus",
+  "names": {
+   "uk": "менінгококова інфекція",
+   "ru": "менингококковая инфекция",
+   "en": "meningococcal disease"
+  }
+ },
+ {
+  "key": "rotavirus",
+  "names": {
+   "uk": "ротавірусна інфекція",
+   "ru": "ротавирусная инфекция",
+   "en": "rotavirus"
+  }
+ },
+ {
+  "key": "hpv",
+  "names": {
+   "uk": "вірус папіломи людини",
+   "ru": "вирус папилломы человека",
+   "en": "human papillomavirus"
+  }
+ },
+ {
+  "key": "influenza",
+  "names": {
+   "uk": "грип",
+   "ru": "грипп",
+   "en": "flu"
+  }
+ },
+ {
+  "key": "covid19",
+  "names": {
+   "uk": "COVID-19",
+   "ru": "COVID-19",
+   "en": "COVID-19"
+  }
+ },
+ {
+  "key": "rsv",
+  "names": {
+   "uk": "респіраторно-синцитіальний вірус",
+   "ru": "респираторно-синцитиальный вирус",
+   "en": "respiratory syncytial virus"
+  }
+ },
+ {
+  "key": "tick_borne_encephalitis",
+  "names": {
+   "uk": "кліщовий енцефаліт",
+   "ru": "клещевой энцефалит",
+   "en": "tick-borne encephalitis"
+  }
+ },
+ {
+  "key": "rabies",
+  "names": {
+   "uk": "сказ",
+   "ru": "бешенство",
+   "en": "rabies"
+  }
+ },
+ {
+  "key": "typhoid",
+  "names": {
+   "uk": "черевний тиф",
+   "ru": "брюшной тиф",
+   "en": "typhoid"
+  }
+ },
+ {
+  "key": "yellow_fever",
+  "names": {
+   "uk": "жовта гарячка",
+   "ru": "желтая лихорадка",
+   "en": "yellow fever"
+  }
+ },
+ {
+  "key": "cholera",
+  "names": {
+   "uk": "холера",
+   "ru": "холера",
+   "en": "cholera"
+  }
+ },
+ {
+  "key": "japanese_encephalitis",
+  "names": {
+   "uk": "японський енцефаліт",
+   "ru": "японский энцефалит",
+   "en": "Japanese encephalitis"
+  }
+ },
+ {
+  "key": "mpox",
+  "names": {
+   "uk": "мпокс (віспа мавп)",
+   "ru": "оспа обезьян",
+   "en": "mpox"
+  }
+ }
+]
