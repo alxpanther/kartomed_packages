@@ -1,1 +1,0 @@
-# kartomed_packages
