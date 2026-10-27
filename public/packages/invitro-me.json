@@ -1,0 +1,154 @@
+{
+ "id": "invitro-me",
+ "name": "Invitro",
+ "kind": "lab",
+ "country": "ME",
+ "site": "https://www.invitro.co.me/",
+ "cities": {
+  "podgorica": {
+   "uk": "Подгориця",
+   "ru": "Подгорица",
+   "en": "Podgorica",
+   "local": "Podgorica"
+  }
+ },
+ "phones": [],
+ "emails": [],
+ "branches": [
+  {
+   "ref": "9d6582d1146e",
+   "city": "podgorica",
+   "address": "Bulevar Ivana Crnojevića 58",
+   "phones": [
+    {
+     "value": "+38220231822"
+    },
+    {
+     "value": "+38220231833"
+    },
+    {
+     "value": "+38267231833"
+    },
+    {
+     "value": "+38220240197",
+     "label": "fax"
+    },
+    {
+     "value": "+38220240199",
+     "label": "Mikrobiologija"
+    }
+   ],
+   "emails": [
+    {
+     "value": "invitrolaboratorija@yahoo.com"
+    },
+    {
+     "value": "invitrocg@t-com.me"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "07:00-21:00"
+    ],
+    "2": [
+     "07:00-21:00"
+    ],
+    "3": [
+     "07:00-21:00"
+    ],
+    "4": [
+     "07:00-21:00"
+    ],
+    "5": [
+     "07:00-21:00"
+    ],
+    "6": [
+     "07:00-15:00"
+    ]
+   }
+  },
+  {
+   "ref": "44726c4bb571",
+   "city": "podgorica",
+   "address": "V proleterske bb, Stari aerodrom",
+   "phones": [
+    {
+     "value": "+38220656900"
+    },
+    {
+     "value": "+38267656900"
+    },
+    {
+     "value": "+38220656997",
+     "label": "fax"
+    }
+   ],
+   "emails": [
+    {
+     "value": "invitroplus@gmail.com"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "07:00-20:00"
+    ],
+    "2": [
+     "07:00-20:00"
+    ],
+    "3": [
+     "07:00-20:00"
+    ],
+    "4": [
+     "07:00-20:00"
+    ],
+    "5": [
+     "07:00-20:00"
+    ],
+    "6": [
+     "07:00-15:00"
+    ]
+   }
+  },
+  {
+   "ref": "da57f21d8b4e",
+   "city": "podgorica",
+   "address": "Ilije Plamenca BB",
+   "phones": [
+    {
+     "value": "+38220652200"
+    },
+    {
+     "value": "+38267652200"
+    }
+   ],
+   "emails": [
+    {
+     "value": "invitrolaboratorija.z@gmail.com"
+    },
+    {
+     "value": "invitrolaboratorija@gmail.com"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "07:00-20:00"
+    ],
+    "2": [
+     "07:00-20:00"
+    ],
+    "3": [
+     "07:00-20:00"
+    ],
+    "4": [
+     "07:00-20:00"
+    ],
+    "5": [
+     "07:00-20:00"
+    ],
+    "6": [
+     "07:00-15:00"
+    ]
+   }
+  }
+ ]
+}

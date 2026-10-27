@@ -127,14 +127,17 @@ Extracted parseAnswer(Map<String, Object?> json) {
             when text(branch['address']) != null &&
                 text(branch['cityEn']) != null)
           Branch(
-            city: City(cityKey(text(branch['cityEn'])!), <String, String>{
-              for (final String lang in <String>['uk', 'ru', 'en', 'local'])
-                if (text(
-                      branch['city${lang[0].toUpperCase()}${lang.substring(1)}'],
-                    )
-                    case final String name)
-                  lang: name,
-            }),
+            city: City(
+              cityKey(text(branch['cityLocal']) ?? text(branch['cityEn'])!),
+              <String, String>{
+                for (final String lang in <String>['uk', 'ru', 'en', 'local'])
+                  if (text(
+                        branch['city${lang[0].toUpperCase()}${lang.substring(1)}'],
+                      )
+                      case final String name)
+                    lang: name,
+              },
+            ),
             address: text(branch['address'])!,
             postcode: text(branch['postcode']),
             phones: contacts(branch['phones']),
@@ -161,7 +164,9 @@ empty ("" or []) when the text does not give it.
 For each branch:
 - cityEn, cityUk, cityRu, cityLocal: the city of the branch in English
   (common English spelling: Kyiv, Warsaw, Prague, Podgorica), Ukrainian,
-  Russian and the local language of the country.
+  Russian and the local language of the country. The city is the settlement
+  the branch is in: a village or town next to a big city is a city of its
+  own, not the big one.
 - address: street and house number as the site writes them, in the site's
   local language, without the city, postcode or country. A building, floor or
   office goes after the house number.

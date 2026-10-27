@@ -1,0 +1,114 @@
+{
+ "id": "medicamente",
+ "name": "Medicamente",
+ "kind": "clinic",
+ "country": "CZ",
+ "site": "https://medicamente.cz/",
+ "cities": {
+  "praha": {
+   "uk": "Прага",
+   "ru": "Прага",
+   "en": "Prague",
+   "local": "Praha"
+  },
+  "karlovy-vary": {
+   "uk": "Карлові Вари",
+   "ru": "Карловы Вары",
+   "en": "Karlovy Vary",
+   "local": "Karlovy Vary"
+  }
+ },
+ "phones": [
+  {
+   "value": "+420253253252",
+   "label": "Колл-центр"
+  }
+ ],
+ "emails": [
+  {
+   "value": "info@medicamente.cz"
+  }
+ ],
+ "branches": [
+  {
+   "ref": "240fe04c142a",
+   "city": "praha",
+   "address": "Bolzanová 1679/3",
+   "postcode": "110 00",
+   "phones": [
+    {
+     "value": "+420253253252"
+    }
+   ],
+   "emails": [
+    {
+     "value": "info@medicamente.cz"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "08:30-19:30"
+    ],
+    "2": [
+     "08:30-19:30"
+    ],
+    "3": [
+     "08:30-19:30"
+    ],
+    "4": [
+     "08:30-19:30"
+    ],
+    "5": [
+     "08:30-19:30"
+    ],
+    "6": [
+     "10:00-15:00"
+    ],
+    "7": [
+     "10:00-15:00"
+    ]
+   },
+   "hoursNote": "Указаны часы работы колл-центра."
+  },
+  {
+   "ref": "1811ac5a5268",
+   "city": "karlovy-vary",
+   "address": "Belehradská 1091/6",
+   "postcode": "360 01",
+   "phones": [
+    {
+     "value": "+420770689903"
+    }
+   ],
+   "emails": [
+    {
+     "value": "info@medicamente.cz"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "08:30-19:30"
+    ],
+    "2": [
+     "08:30-19:30"
+    ],
+    "3": [
+     "08:30-19:30"
+    ],
+    "4": [
+     "08:30-19:30"
+    ],
+    "5": [
+     "08:30-19:30"
+    ],
+    "6": [
+     "10:00-15:00"
+    ],
+    "7": [
+     "10:00-15:00"
+    ]
+   },
+   "hoursNote": "Указаны часы работы колл-центра."
+  }
+ ]
+}

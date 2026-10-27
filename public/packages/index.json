@@ -1,0 +1,992 @@
+{
+  "format": 1,
+  "built": "2026-10-27T13:52:38Z",
+  "cities": {
+    "CZ": {
+      "karlovy-vary": {
+        "uk": "Карлові Вари",
+        "ru": "Карловы Вары",
+        "en": "Karlovy Vary",
+        "local": "Karlovy Vary"
+      },
+      "praha": {
+        "uk": "Прага",
+        "ru": "Прага",
+        "en": "Prague",
+        "local": "Praha"
+      }
+    },
+    "ME": {
+      "podgorica": {
+        "uk": "Подгориця",
+        "ru": "Подгорица",
+        "en": "Podgorica",
+        "local": "Podgorica"
+      }
+    },
+    "PL": {
+      "bardo": {
+        "uk": "Бардо",
+        "ru": "Бардо",
+        "en": "Bardo",
+        "local": "Bardo"
+      },
+      "barlinek": {
+        "uk": "Барлінек",
+        "ru": "Барлинек",
+        "en": "Barlinek",
+        "local": "Barlinek"
+      },
+      "bialystok": {
+        "uk": "Білосток",
+        "ru": "Белосток",
+        "en": "Białystok",
+        "local": "Białystok"
+      },
+      "bielsko-biala": {
+        "uk": "Бельсько-Бяла",
+        "ru": "Бельско-Бяла",
+        "en": "Bielsko-Biała",
+        "local": "Bielsko-Biała"
+      },
+      "brodnica": {
+        "uk": "Бродниця",
+        "ru": "Бродница",
+        "en": "Brodnica",
+        "local": "Brodnica"
+      },
+      "bydgoszcz": {
+        "uk": "Бидгощ",
+        "ru": "Быдгощ",
+        "en": "Bydgoszcz",
+        "local": "Bydgoszcz"
+      },
+      "bytom": {
+        "uk": "Битом",
+        "ru": "Бытом",
+        "en": "Bytom",
+        "local": "Bytom"
+      },
+      "chelmno": {
+        "uk": "Хелмно",
+        "ru": "Хелмно",
+        "en": "Chełmno",
+        "local": "Chełmno"
+      },
+      "czaplinek": {
+        "uk": "Чаплінек",
+        "ru": "Чаплинек",
+        "en": "Czaplinek",
+        "local": "Czaplinek"
+      },
+      "czestochowa": {
+        "uk": "Ченстохова",
+        "ru": "Ченстохова",
+        "en": "Częstochowa",
+        "local": "Częstochowa"
+      },
+      "czluchow": {
+        "uk": "Члухув",
+        "ru": "Члухув",
+        "en": "Człuchów",
+        "local": "Człuchów"
+      },
+      "dobczyce": {
+        "uk": "Добчице",
+        "ru": "Добчице",
+        "en": "Dobczyce",
+        "local": "Dobczyce"
+      },
+      "dzialdowo": {
+        "uk": "Джалдово",
+        "ru": "Джалдово",
+        "en": "Działdowo",
+        "local": "Działdowo"
+      },
+      "gdansk": {
+        "uk": "Гданськ",
+        "ru": "Гданьск",
+        "en": "Gdańsk",
+        "local": "Gdańsk"
+      },
+      "gdynia": {
+        "uk": "Гдиня",
+        "ru": "Гдыня",
+        "en": "Gdynia",
+        "local": "Gdynia"
+      },
+      "gliwice": {
+        "uk": "Глівіце",
+        "ru": "Гливице",
+        "en": "Gliwice",
+        "local": "Gliwice"
+      },
+      "glogow": {
+        "uk": "Глогув",
+        "ru": "Глогув",
+        "en": "Głogów",
+        "local": "Głogów"
+      },
+      "glowno": {
+        "uk": "Główno",
+        "ru": "Главно",
+        "en": "Głowno",
+        "local": "Głowno"
+      },
+      "gorzow-wielkopolski": {
+        "uk": "Гожув-Велькопольський",
+        "ru": "Гожув-Велькопольски",
+        "en": "Gorzów Wielkopolski",
+        "local": "Gorzów Wielkopolski"
+      },
+      "grojec": {
+        "uk": "Грующ",
+        "ru": "Грујец",
+        "en": "Grójec",
+        "local": "Grójec"
+      },
+      "insko": {
+        "uk": "Іньсько",
+        "ru": "Иньско",
+        "en": "Ińsko",
+        "local": "Ińsko"
+      },
+      "jaroslaw": {
+        "uk": "Ярослав",
+        "ru": "Ярослав",
+        "en": "Jarosław",
+        "local": "Jarosław"
+      },
+      "jaworzno": {
+        "uk": "Яворжно",
+        "ru": "Яворжно",
+        "en": "Jaworzno",
+        "local": "Jaworzno"
+      },
+      "jelcz-laskowice": {
+        "uk": "Єльч-Ласковіце",
+        "ru": "Ельч-Ласковице",
+        "en": "Jelcz-Laskowice",
+        "local": "Jelcz-Laskowice"
+      },
+      "kalisz-pomorski": {
+        "uk": "Калиш-Поморський",
+        "ru": "Калиш-Поморски",
+        "en": "Kalisz Pomorski",
+        "local": "Kalisz Pomorski"
+      },
+      "katowice": {
+        "uk": "Катовіце",
+        "ru": "Катовице",
+        "en": "Katowice",
+        "local": "Katowice"
+      },
+      "klodzko": {
+        "uk": "Клодзько",
+        "ru": "Клодзько",
+        "en": "Kłodzko",
+        "local": "Kłodzko"
+      },
+      "kolobrzeg": {
+        "uk": "Колобжег",
+        "ru": "Колобжег",
+        "en": "Kołobrzeg",
+        "local": "Kołobrzeg"
+      },
+      "konin": {
+        "uk": "Коніп",
+        "ru": "Конин",
+        "en": "Konin",
+        "local": "Konin"
+      },
+      "kosakowo": {
+        "uk": "Косаковo",
+        "ru": "Косаково",
+        "en": "Kosakowo",
+        "local": "Kosakowo"
+      },
+      "koscierzyna": {
+        "uk": "Коscежина",
+        "ru": "Кошежина",
+        "en": "Kościerzyna",
+        "local": "Kościerzyna"
+      },
+      "koszalin": {
+        "uk": "Кошалін",
+        "ru": "Кошалин",
+        "en": "Koszalin",
+        "local": "Koszalin"
+      },
+      "kozuchow": {
+        "uk": "Кожухув",
+        "ru": "Кожухув",
+        "en": "Kożuchów",
+        "local": "Kożuchów"
+      },
+      "krakow": {
+        "uk": "Краків",
+        "ru": "Краков",
+        "en": "Kraków",
+        "local": "Kraków"
+      },
+      "lobez": {
+        "uk": "Лобез",
+        "ru": "Лобез",
+        "en": "Łobez",
+        "local": "Łobez"
+      },
+      "lodz": {
+        "uk": "Лодзь",
+        "ru": "Лодзь",
+        "en": "Łódź",
+        "local": "Łódź"
+      },
+      "lublin": {
+        "uk": "Люблін",
+        "ru": "Люблин",
+        "en": "Lublin",
+        "local": "Lublin"
+      },
+      "mikolow": {
+        "uk": "Миколув",
+        "ru": "Миколув",
+        "en": "Mikołów",
+        "local": "Mikołów"
+      },
+      "mscice": {
+        "uk": "Мщице",
+        "ru": "Мщице",
+        "en": "Mścice",
+        "local": "Mścice"
+      },
+      "myslenice": {
+        "uk": "Mишленіце",
+        "ru": "Мышленице",
+        "en": "Myślenice",
+        "local": "Myślenice"
+      },
+      "myslowice": {
+        "uk": "Мисловиці",
+        "ru": "Мысловице",
+        "en": "Mysłowice",
+        "local": "Mysłowice"
+      },
+      "nowa-sol": {
+        "uk": "Нова Суль",
+        "ru": "Нова-Соль",
+        "en": "Nowa Sól",
+        "local": "Nowa Sól"
+      },
+      "piotrkow-trybunalski": {
+        "uk": "Пйотркув-Трибунальський",
+        "ru": "Пётркув-Трибунальски",
+        "en": "Piotrków Trybunalski",
+        "local": "Piotrków Trybunalski"
+      },
+      "plock": {
+        "uk": "Плоцьк",
+        "ru": "Плоцк",
+        "en": "Płock",
+        "local": "Płock"
+      },
+      "police": {
+        "uk": "Полиці",
+        "ru": "Полице",
+        "en": "Police",
+        "local": "Police"
+      },
+      "poznan": {
+        "uk": "Познань",
+        "ru": "Познань",
+        "en": "Poznań",
+        "local": "Poznań"
+      },
+      "przemysl": {
+        "uk": "Перемишль",
+        "ru": "Пшемысль",
+        "en": "Przemyśl",
+        "local": "Przemyśl"
+      },
+      "przybiernow": {
+        "uk": "Пжибернув",
+        "ru": "Пшибернув",
+        "en": "Przybiernów",
+        "local": "Przybiernów"
+      },
+      "radzymin": {
+        "uk": "Радзимін",
+        "ru": "Раджимин",
+        "en": "Radzymin",
+        "local": "Radzymin"
+      },
+      "resko": {
+        "uk": "Реско",
+        "ru": "Реско",
+        "en": "Resko",
+        "local": "Resko"
+      },
+      "rumia": {
+        "uk": "Румія",
+        "ru": "Румия",
+        "en": "Rumia",
+        "local": "Rumia"
+      },
+      "rybnik": {
+        "uk": "Рибнік",
+        "ru": "Рыбник",
+        "en": "Rybnik",
+        "local": "Rybnik"
+      },
+      "rzeszow": {
+        "uk": "Жешув",
+        "ru": "Жешув",
+        "en": "Rzeszów",
+        "local": "Rzeszów"
+      },
+      "skorzewo": {
+        "uk": "Скужево",
+        "ru": "Скужево",
+        "en": "Skórzewo",
+        "local": "Skórzewo"
+      },
+      "smolec": {
+        "uk": "Смолец",
+        "ru": "Смолец",
+        "en": "Smolec",
+        "local": "Smolec"
+      },
+      "sosnowiec": {
+        "uk": "Сосновець",
+        "ru": "Сосновец",
+        "en": "Sosnowiec",
+        "local": "Sosnowiec"
+      },
+      "starogard-gdanski": {
+        "uk": "Старогард-Гданський",
+        "ru": "Старогард-Гданьски",
+        "en": "Starogard Gdański",
+        "local": "Starogard Gdański"
+      },
+      "stepnica": {
+        "uk": "Степниця",
+        "ru": "Степница",
+        "en": "Stepnica",
+        "local": "Stepnica"
+      },
+      "steszew": {
+        "uk": "Стеншев",
+        "ru": "Стеншев",
+        "en": "Stęszew",
+        "local": "Stęszew"
+      },
+      "sulechow": {
+        "uk": "Сулехув",
+        "ru": "Сулехув",
+        "en": "Sulechów",
+        "local": "Sulechów"
+      },
+      "swidnica": {
+        "uk": "Свидниця",
+        "ru": "Свидница",
+        "en": "Świdnica",
+        "local": "Świdnica"
+      },
+      "swiebodzin": {
+        "uk": "Свебодзин",
+        "ru": "Свебодзин",
+        "en": "Świebodzin",
+        "local": "Świebodzin"
+      },
+      "szczecin": {
+        "uk": "Щецин",
+        "ru": "Щецин",
+        "en": "Szczecin",
+        "local": "Szczecin"
+      },
+      "tarnow": {
+        "uk": "Тарнув",
+        "ru": "Тарнув",
+        "en": "Tarnów",
+        "local": "Tarnów"
+      },
+      "tczew": {
+        "uk": "Тчев",
+        "ru": "Тчев",
+        "en": "Tczew",
+        "local": "Tczew"
+      },
+      "tomaszow-lubelski": {
+        "uk": "Томашув-Любельський",
+        "ru": "Томашув-Любельский",
+        "en": "Tomaszów Lubelski",
+        "local": "Tomaszów Lubelski"
+      },
+      "torun": {
+        "uk": "Торунь",
+        "ru": "Торунь",
+        "en": "Toruń",
+        "local": "Toruń"
+      },
+      "tychy": {
+        "uk": "Тихи",
+        "ru": "Тыхы",
+        "en": "Tychy",
+        "local": "Tychy"
+      },
+      "warszawa": {
+        "uk": "Варшава",
+        "ru": "Варшава",
+        "en": "Warsaw",
+        "local": "Warszawa"
+      },
+      "wegorzyno": {
+        "uk": "Венгожино",
+        "ru": "Венгожино",
+        "en": "Węgorzyno",
+        "local": "Węgorzyno"
+      },
+      "wejherowo": {
+        "uk": "Вейхерово",
+        "ru": "Вейхерово",
+        "en": "Wejherowo",
+        "local": "Wejherowo"
+      },
+      "wieliczka": {
+        "uk": "Велічка",
+        "ru": "Величка",
+        "en": "Wieliczka",
+        "local": "Wieliczka"
+      },
+      "wloclawek": {
+        "uk": "Влоцлавек",
+        "ru": "Влоцлавек",
+        "en": "Włocławek",
+        "local": "Włocławek"
+      },
+      "wolbrom": {
+        "uk": "Вольбром",
+        "ru": "Вольбром",
+        "en": "Wolbrom",
+        "local": "Wolbrom"
+      },
+      "wolomin": {
+        "uk": "Воломин",
+        "ru": "Воломин",
+        "en": "Wołomin",
+        "local": "Wołomin"
+      },
+      "wroclaw": {
+        "uk": "Вроцлав",
+        "ru": "Вроцлав",
+        "en": "Wrocław",
+        "local": "Wrocław"
+      },
+      "wyszkow": {
+        "uk": "Вишкув",
+        "ru": "Вышкув",
+        "en": "Wyszków",
+        "local": "Wyszków"
+      },
+      "zabkowice-slaskie": {
+        "uk": "Ґомбковіце-Шльонські",
+        "ru": "Гомбковице-Шленьске",
+        "en": "Ząbkowice Śląskie",
+        "local": "Ząbkowice Śląskie"
+      },
+      "zabrze": {
+        "uk": "Забже",
+        "ru": "Забже",
+        "en": "Zabrze",
+        "local": "Zabrze"
+      },
+      "zakopane": {
+        "uk": "Закопане",
+        "ru": "Закопане",
+        "en": "Zakopane",
+        "local": "Zakopane"
+      },
+      "zary": {
+        "uk": "Жари",
+        "ru": "Жары",
+        "en": "Żary",
+        "local": "Żary"
+      },
+      "zgierz": {
+        "uk": "Згеж",
+        "ru": "Згеж",
+        "en": "Zgierz",
+        "local": "Zgierz"
+      },
+      "zielona-gora": {
+        "uk": "Зелена Гура",
+        "ru": "Зелёна-Гура",
+        "en": "Zielona Góra",
+        "local": "Zielona Góra"
+      }
+    },
+    "UA": {
+      "brovary": {
+        "uk": "Бровари",
+        "ru": "Бровары",
+        "en": "Brovary",
+        "local": "Бровари"
+      },
+      "irpin": {
+        "uk": "Ірпінь",
+        "ru": "Ирпень",
+        "en": "Irpin",
+        "local": "Ірпінь"
+      },
+      "kyiv": {
+        "uk": "Київ",
+        "ru": "Киев",
+        "en": "Kyiv",
+        "local": "Київ"
+      },
+      "obukhiv": {
+        "uk": "Обухів",
+        "ru": "Обухов",
+        "en": "Obukhiv",
+        "local": "Обухів"
+      },
+      "sofiivska-borshchahivka": {
+        "uk": "Софіївська Борщагівка",
+        "ru": "Софиевская Борщаговка",
+        "en": "Sofiivska Borshchahivka",
+        "local": "Софіївська Борщагівка"
+      },
+      "uzhhorod": {
+        "uk": "Ужгород",
+        "ru": "Ужгород",
+        "en": "Uzhhorod",
+        "local": "Ужгород"
+      }
+    }
+  },
+  "networks": {
+    "adonis": {
+      "name": "Адоніс",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://adonis.com.ua/",
+      "version": "326b053f548e0fb3",
+      "cities": {
+        "kyiv": 4,
+        "obukhiv": 1,
+        "sofiivska-borshchahivka": 1
+      },
+      "logo": "logos/adonis.png"
+    },
+    "astra-medika": {
+      "name": "Астра Медіка",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://astramedika.com.ua/",
+      "version": "73260e3d039e7274",
+      "cities": {
+        "kyiv": 1
+      },
+      "logo": "logos/astra-medika.png"
+    },
+    "astramed-warszawa": {
+      "name": "Astramed",
+      "kind": "clinic",
+      "country": "PL",
+      "site": "https://astramed.waw.pl/",
+      "version": "9491f8beb31f86bc",
+      "cities": {
+        "warszawa": 6
+      },
+      "logo": "logos/astramed-warszawa.png"
+    },
+    "dila": {
+      "name": "ДІЛА",
+      "kind": "lab",
+      "country": "UA",
+      "site": "https://dila.ua/",
+      "version": "88a44ad8abcba4e3",
+      "cities": {
+        "kyiv": 115
+      },
+      "logo": "logos/dila.png"
+    },
+    "dobrobut": {
+      "name": "Добробут",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://dobrobut.com/",
+      "version": "275caceccb04dfe3",
+      "cities": {
+        "brovary": 1,
+        "irpin": 1,
+        "kyiv": 13,
+        "sofiivska-borshchahivka": 1
+      },
+      "logo": "logos/dobrobut.png"
+    },
+    "dobroclinic": {
+      "name": "Dobroclinic",
+      "kind": "clinic",
+      "country": "CZ",
+      "site": "https://dobroclinic.cz/",
+      "version": "6f8aa4c2240f8ed7",
+      "cities": {
+        "praha": 1
+      },
+      "logo": "logos/dobroclinic.png"
+    },
+    "harmony-health": {
+      "name": "Гармонія здоров'я",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://harmony-health.com.ua/",
+      "version": "d54e25014794bfa6",
+      "cities": {
+        "kyiv": 11
+      },
+      "logo": "logos/harmony-health.png"
+    },
+    "invitro-me": {
+      "name": "Invitro",
+      "kind": "lab",
+      "country": "ME",
+      "site": "https://www.invitro.co.me/",
+      "version": "d5200311b0509e7b",
+      "cities": {
+        "podgorica": 3
+      }
+    },
+    "isida": {
+      "name": "Ісіда",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://isida.ua/",
+      "version": "0d40d22d4612e59d",
+      "cities": {
+        "kyiv": 3,
+        "uzhhorod": 1
+      }
+    },
+    "meddiagnostica": {
+      "name": "Меддіагностика",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://www.meddiagnostica.com.ua/",
+      "version": "150f5d0836453ed6",
+      "cities": {
+        "kyiv": 1
+      },
+      "logo": "logos/meddiagnostica.png"
+    },
+    "medicamente": {
+      "name": "Medicamente",
+      "kind": "clinic",
+      "country": "CZ",
+      "site": "https://medicamente.cz/",
+      "version": "d812c01d1fed2319",
+      "cities": {
+        "karlovy-vary": 1,
+        "praha": 1
+      },
+      "logo": "logos/medicamente.png"
+    },
+    "medikom": {
+      "name": "Медіком",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://medikom.ua/",
+      "version": "e4d7507e492bd047",
+      "cities": {
+        "kyiv": 4
+      },
+      "logo": "logos/medikom.png"
+    },
+    "medlabtest": {
+      "name": "Медлабтест",
+      "kind": "lab",
+      "country": "UA",
+      "site": "https://medlabtest.ua/",
+      "version": "573da4745b39d192",
+      "cities": {
+        "kyiv": 40
+      },
+      "logo": "logos/medlabtest.png"
+    },
+    "oxford-medical": {
+      "name": "Оксфорд Медікал",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://oxford-med.com.ua/",
+      "version": "faf2227a31223ebe",
+      "cities": {
+        "irpin": 1,
+        "kyiv": 13
+      },
+      "logo": "logos/oxford-medical.png"
+    },
+    "smart-medical-center": {
+      "name": "Smart Medical Center",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://smartmedicalcenter.ua/",
+      "version": "748f1b845db22e02",
+      "cities": {
+        "kyiv": 3
+      },
+      "logo": "logos/smart-medical-center.png"
+    },
+    "synevo-pl": {
+      "name": "Synevo",
+      "kind": "lab",
+      "country": "PL",
+      "site": "https://synevo.pl/",
+      "version": "a7ba56abeeddee52",
+      "cities": {
+        "bardo": 1,
+        "barlinek": 1,
+        "bialystok": 1,
+        "bielsko-biala": 2,
+        "brodnica": 1,
+        "bydgoszcz": 5,
+        "bytom": 1,
+        "chelmno": 1,
+        "czaplinek": 1,
+        "czestochowa": 1,
+        "czluchow": 1,
+        "dobczyce": 1,
+        "dzialdowo": 1,
+        "gdansk": 11,
+        "gdynia": 5,
+        "gliwice": 4,
+        "glogow": 1,
+        "glowno": 1,
+        "gorzow-wielkopolski": 2,
+        "grojec": 1,
+        "insko": 1,
+        "jaroslaw": 1,
+        "jaworzno": 1,
+        "jelcz-laskowice": 1,
+        "kalisz-pomorski": 1,
+        "katowice": 4,
+        "klodzko": 1,
+        "kolobrzeg": 1,
+        "konin": 2,
+        "kosakowo": 1,
+        "koscierzyna": 1,
+        "koszalin": 3,
+        "kozuchow": 1,
+        "krakow": 10,
+        "lobez": 1,
+        "lodz": 9,
+        "lublin": 2,
+        "mikolow": 1,
+        "mscice": 1,
+        "myslenice": 1,
+        "myslowice": 1,
+        "nowa-sol": 2,
+        "piotrkow-trybunalski": 1,
+        "plock": 1,
+        "police": 1,
+        "poznan": 8,
+        "przemysl": 1,
+        "przybiernow": 1,
+        "radzymin": 1,
+        "resko": 1,
+        "rumia": 1,
+        "rybnik": 1,
+        "rzeszow": 1,
+        "skorzewo": 1,
+        "smolec": 1,
+        "sosnowiec": 1,
+        "starogard-gdanski": 1,
+        "stepnica": 1,
+        "steszew": 1,
+        "sulechow": 1,
+        "swidnica": 1,
+        "swiebodzin": 2,
+        "szczecin": 11,
+        "tarnow": 1,
+        "tczew": 1,
+        "tomaszow-lubelski": 1,
+        "torun": 6,
+        "tychy": 1,
+        "warszawa": 23,
+        "wegorzyno": 1,
+        "wejherowo": 1,
+        "wieliczka": 1,
+        "wloclawek": 5,
+        "wolbrom": 1,
+        "wolomin": 1,
+        "wroclaw": 16,
+        "wyszkow": 1,
+        "zabkowice-slaskie": 1,
+        "zabrze": 1,
+        "zakopane": 1,
+        "zary": 1,
+        "zgierz": 1,
+        "zielona-gora": 6
+      },
+      "logo": "logos/synevo-pl.png"
+    },
+    "synevo-ua": {
+      "name": "Synevo",
+      "kind": "lab",
+      "country": "UA",
+      "site": "https://www.synevo.ua/",
+      "version": "b4ed67e2be40a5a6",
+      "cities": {
+        "kyiv": 65
+      },
+      "logo": "logos/synevo-ua.png"
+    },
+    "viva-clinic": {
+      "name": "Віва",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://viva.clinic/",
+      "version": "5d4017e5dcf5f451",
+      "cities": {
+        "kyiv": 12
+      },
+      "logo": "logos/viva-clinic.png"
+    }
+  },
+  "files": {
+    "adonis.json": {
+      "size": 3509,
+      "sha256": "326b053f548e0fb376663196171b66b2bb50adc8bd718dced3e8587433a6cbb1"
+    },
+    "astra-medika.json": {
+      "size": 884,
+      "sha256": "73260e3d039e7274888a3a5eaca07670eacaa3e562e6e208c44d8ee96ebc0653"
+    },
+    "astramed-warszawa.json": {
+      "size": 3073,
+      "sha256": "9491f8beb31f86bc7e4a902fa62cb089a0762436bd318e9247f773faadd2b302"
+    },
+    "dila.json": {
+      "size": 50277,
+      "sha256": "88a44ad8abcba4e3eb8496a1d3d6ca6afc07b8cbfcf2834e44c68e9ad0575bbe"
+    },
+    "dobrobut.json": {
+      "size": 8652,
+      "sha256": "275caceccb04dfe3155d46999732b3ef9955d73057d0afad987d07af734f5f0a"
+    },
+    "dobroclinic.json": {
+      "size": 778,
+      "sha256": "6f8aa4c2240f8ed747441aeafe02d339a09c1ae4327f1a5a92253c92d08c4cae"
+    },
+    "harmony-health.json": {
+      "size": 5811,
+      "sha256": "d54e25014794bfa63f9ac12aa58f43975c8f13e04980d0f047fc9dc3c1e06642"
+    },
+    "invitro-me.json": {
+      "size": 2239,
+      "sha256": "d5200311b0509e7bc9324b449fa0c22e9817da408b4e46ab28ce5e6def7ecff9"
+    },
+    "isida.json": {
+      "size": 2553,
+      "sha256": "0d40d22d4612e59d665f5ae504a61dad98340740aaaf38569057f04d9babf973"
+    },
+    "logos/adonis.png": {
+      "size": 5421,
+      "sha256": "f81f755c0c00ff4e0bee1a3566dc884eb4e22ef8c07edd2663f5db266ccbc250"
+    },
+    "logos/astra-medika.png": {
+      "size": 2697,
+      "sha256": "07a80a86d7aa81dd0032ea1614a0865f8b96ad4462c59204675d2a9a5af3ad76"
+    },
+    "logos/astramed-warszawa.png": {
+      "size": 11158,
+      "sha256": "93c0fe4f912ba2ee26fd373d629014b0014230c86593d3922737b237a6e182ea"
+    },
+    "logos/dila.png": {
+      "size": 1256,
+      "sha256": "63ab41b4f497dea132d9a465e0c7098ffc457950223d3f5b8adc78faea0136dd"
+    },
+    "logos/dobrobut.png": {
+      "size": 9757,
+      "sha256": "be23715faff21b28869ca79c268872a865c0231b02569815a58eec5da9e9976e"
+    },
+    "logos/dobroclinic.png": {
+      "size": 5756,
+      "sha256": "1a80bbef3365c921f568f2fb6932f891b251458b287e8334b87f1ad6da281a18"
+    },
+    "logos/harmony-health.png": {
+      "size": 17947,
+      "sha256": "c795dac224466327e0c64b20a4994a54cbc263ba35e2ca7fbfa6843dafaf983b"
+    },
+    "logos/meddiagnostica.png": {
+      "size": 2633,
+      "sha256": "8861b0a67505c365b4b01f8bed466ef166af8be9ad124974454018ecc419412a"
+    },
+    "logos/medicamente.png": {
+      "size": 1625,
+      "sha256": "80a4fa1dbf578d1f33a99f08a143bb64d1b5126bbd3d839d8fad223357221732"
+    },
+    "logos/medikom.png": {
+      "size": 7629,
+      "sha256": "4d1966600298e9a3343b6ddb64c7f1e73b706d22ddb703ab2c1b9058cdc21fc1"
+    },
+    "logos/medlabtest.png": {
+      "size": 35495,
+      "sha256": "08768ea3f05db8eb27397b7cb6da39e1ded0fb42ee5fc015960748d574a05e3a"
+    },
+    "logos/oxford-medical.png": {
+      "size": 2624,
+      "sha256": "0b51cec5d4b8aee50be898b9822cbc9c03115710d4504f66066f9b99e40e2117"
+    },
+    "logos/smart-medical-center.png": {
+      "size": 29738,
+      "sha256": "0d459bfa58890a9ca786fc0a8673b794f55036af1bd513836538a7cc87eb5466"
+    },
+    "logos/synevo-pl.png": {
+      "size": 10756,
+      "sha256": "24951884b9fa6c6a19f9721b31bc6b16a6b279a62cd57058a2b068093dad1480"
+    },
+    "logos/synevo-ua.png": {
+      "size": 1139,
+      "sha256": "7618fa12b34fb165ceb07ccc77eea917f311f7406b33154fe7b98e8965910684"
+    },
+    "logos/viva-clinic.png": {
+      "size": 7096,
+      "sha256": "1eb211e9f44fe5d2cd030cbc6b3dd4aec683bffe92542341cabc4cfe3d547092"
+    },
+    "meddiagnostica.json": {
+      "size": 1753,
+      "sha256": "150f5d0836453ed63a00fcc495509b451656dcf5ccbb2150d5837c4600735022"
+    },
+    "medicamente.json": {
+      "size": 1775,
+      "sha256": "d812c01d1fed2319e7ecfaf5964d2652a044ce97ad1b68e7dce40357cff87237"
+    },
+    "medikom.json": {
+      "size": 3055,
+      "sha256": "e4d7507e492bd047157b086e8a2eaf98edc62778f5f3a7a1ab40391faf34e2e2"
+    },
+    "medlabtest.json": {
+      "size": 18999,
+      "sha256": "573da4745b39d19206b518ef16bf39117eb818cf656e166d60d73ebb7eabca36"
+    },
+    "oxford-medical.json": {
+      "size": 9591,
+      "sha256": "faf2227a31223ebe486ffd7cf8b2a80e959bbbe2b1e11436dbc1b5977da03e72"
+    },
+    "smart-medical-center.json": {
+      "size": 2462,
+      "sha256": "748f1b845db22e02064e616e7c2e89309a40bdb61c07184c278e8cefa4513de8"
+    },
+    "synevo-pl.json": {
+      "size": 92335,
+      "sha256": "a7ba56abeeddee521ff4604d925a7be48b39dd7f18dd279ae4a5bb76120f5a49"
+    },
+    "synevo-ua.json": {
+      "size": 12597,
+      "sha256": "b4ed67e2be40a5a653fdf133d162dc136c7e0a509654c7d3fe38061ef828690e"
+    },
+    "viva-clinic.json": {
+      "size": 5498,
+      "sha256": "5d4017e5dcf5f451e4719010e22b4d7978da36674b79794e0663e10ad8e06c2e"
+    }
+  }
+}

@@ -26,6 +26,16 @@ import 'src/page_text.dart';
 const String _warningsFile = 'build/warnings.txt';
 const String _errorsFile = 'build/errors.txt';
 
+/// A saved page older than this is reported: its network may have changed.
+const Duration _savedAge = Duration(days: 90);
+
+List<int>? _savedIcon(SavedPage saved) {
+  final File file = File(saved.icon ?? '');
+  return saved.icon == null || !file.existsSync()
+      ? null
+      : prepareIcon(file.readAsBytesSync())?.png;
+}
+
 /// Less text than this is a page whose list a script draws: Chrome renders
 /// it.
 const int _thinPage = 1500;
@@ -70,7 +80,16 @@ Future<void> main(List<String> args) async {
       File('$clinicsBuildDir/${source.id}.json').writeAsStringSync(
         const JsonEncoder.withIndent(' ').convert(network.toJson()),
       );
-      final List<int>? icon = await fetchIcon(source.site);
+      final List<int>? icon = source.saved == null
+          ? await fetchIcon(source.site)
+          : _savedIcon(source.saved!);
+      if (source.saved case final SavedPage saved
+          when DateTime.now().difference(saved.date) > _savedAge) {
+        warnings.add(
+          '${source.id}: the saved page is of ${saved.date.toIso8601String().split('T').first} '
+          '— open ${source.pages.first} and save it again',
+        );
+      }
       if (icon != null) {
         File('$clinicsBuildDir/logos/${source.id}.png').writeAsBytesSync(icon);
       } else {
@@ -109,8 +128,14 @@ Future<void> main(List<String> args) async {
   stdout.writeln(changed ? 'Clinics: published' : 'Clinics: nothing changed');
 }
 
-/// The text of every page of [source], one after another.
+/// The text of every page of [source], one after another; the saved page
+/// for a site closed to programs.
 Future<String> _textOf(NetworkSource source) async {
+  if (source.saved != null) {
+    // «Save page as → Web page, complete» of a browser, or plain text.
+    final String saved = File(source.saved!.text).readAsStringSync();
+    return source.saved!.text.endsWith('.html') ? pageText(saved) : saved;
+  }
   final List<String> parts = <String>[];
   for (final String page in source.pages) {
     final Uri url = Uri.parse(page);

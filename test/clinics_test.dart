@@ -13,6 +13,7 @@ void main() {
     test('national numbers get the country code', () {
       expect(normalizePhone('(044) 495-2-888', 'UA'), '+380444952888');
       expect(normalizePhone('0 800 60 55 00', 'UA'), '+380800605500');
+      expect(normalizePhone('+30800308778', 'UA'), '+380800308778');
       expect(normalizePhone('22 123 45 67', 'PL'), '+48221234567');
     });
 
@@ -60,8 +61,10 @@ void main() {
     );
   });
 
-  test('cityKey writes the English name in plain Latin letters', () {
-    expect(cityKey('Kyiv'), 'kyiv');
+  test('cityKey writes the local name in plain Latin letters', () {
+    expect(cityKey('Київ'), 'kyiv');
+    expect(cityKey('Софіївська Борщагівка'), 'sofiivska-borshchahivka');
+    expect(cityKey('Warszawa'), 'warszawa');
     expect(cityKey('Białystok'), 'bialystok');
     expect(cityKey('Karlovy Vary'), 'karlovy-vary');
   });

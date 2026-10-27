@@ -6,6 +6,7 @@
   {"id": "astra-medika", "name": "Астра Медіка", "kind": "clinic", "country": "UA", "site": "https://astramedika.com.ua/", "pages": ["https://astramedika.com.ua/kontakti"]},
   {"id": "harmony-health", "name": "Гармонія здоров'я", "kind": "clinic", "country": "UA", "site": "https://harmony-health.com.ua/", "pages": ["https://harmony-health.com.ua/ua/kontakty/"]},
   {"id": "viva-clinic", "name": "Віва", "kind": "clinic", "country": "UA", "site": "https://viva.clinic/", "pages": ["https://viva.clinic/kontakti/"]},
+  {"id": "adonis", "name": "Адоніс", "kind": "clinic", "country": "UA", "site": "https://adonis.com.ua/", "pages": ["https://adonis.com.ua/branch/"], "saved": {"text": "clinics/saved/adonis.txt", "icon": "clinics/saved/adonis.png", "date": "2026-10-27"}},
   {"id": "oxford-medical", "name": "Оксфорд Медікал", "kind": "clinic", "country": "UA", "site": "https://oxford-med.com.ua/", "pages": ["https://oxford-med.com.ua/contacts/"]},
   {"id": "dobrobut", "name": "Добробут", "kind": "clinic", "country": "UA", "site": "https://dobrobut.com/", "pages": ["https://dobrobut.com/ua/clinics?type=1"]},
   {"id": "medlabtest", "name": "Медлабтест", "kind": "lab", "country": "UA", "site": "https://medlabtest.ua/", "pages": ["https://medlabtest.ua/uk/contacts/kiev"]},

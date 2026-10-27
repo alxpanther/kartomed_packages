@@ -1,0 +1,57 @@
+{
+ "id": "astra-medika",
+ "name": "Астра Медіка",
+ "kind": "clinic",
+ "country": "UA",
+ "site": "https://astramedika.com.ua/",
+ "cities": {
+  "kyiv": {
+   "uk": "Київ",
+   "ru": "Киев",
+   "en": "Kyiv",
+   "local": "Київ"
+  }
+ },
+ "phones": [],
+ "emails": [],
+ "branches": [
+  {
+   "ref": "830bb35a0273",
+   "city": "kyiv",
+   "address": "вул. Межова, 23Б",
+   "postcode": "04123",
+   "phones": [
+    {
+     "value": "+380683711229",
+     "label": "Контакти"
+    }
+   ],
+   "emails": [
+    {
+     "value": "astramedikaa@gmail.com",
+     "label": "Електронна пошта"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "08:00-19:00"
+    ],
+    "2": [
+     "08:00-19:00"
+    ],
+    "3": [
+     "08:00-19:00"
+    ],
+    "4": [
+     "08:00-19:00"
+    ],
+    "5": [
+     "08:00-19:00"
+    ],
+    "6": [
+     "09:00-15:00"
+    ]
+   }
+  }
+ ]
+}

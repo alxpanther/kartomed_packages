@@ -1,0 +1,55 @@
+{
+ "id": "dobroclinic",
+ "name": "Dobroclinic",
+ "kind": "clinic",
+ "country": "CZ",
+ "site": "https://dobroclinic.cz/",
+ "cities": {
+  "praha": {
+   "uk": "Прага",
+   "ru": "Прага",
+   "en": "Prague",
+   "local": "Praha"
+  }
+ },
+ "phones": [],
+ "emails": [],
+ "branches": [
+  {
+   "ref": "c00b1643d091",
+   "city": "praha",
+   "address": "Jankovcova 788/16",
+   "postcode": "170 00",
+   "phones": [
+    {
+     "value": "+420220770123"
+    }
+   ],
+   "emails": [
+    {
+     "value": "info@dobroclinic.cz"
+    }
+   ],
+   "schedule": {
+    "1": [
+     "08:00-20:00"
+    ],
+    "2": [
+     "08:00-20:00"
+    ],
+    "3": [
+     "08:00-20:00"
+    ],
+    "4": [
+     "08:00-20:00"
+    ],
+    "5": [
+     "08:00-20:00"
+    ],
+    "6": [
+     "08:00-20:00"
+    ]
+   }
+  }
+ ]
+}

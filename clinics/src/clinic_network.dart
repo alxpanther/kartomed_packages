@@ -24,6 +24,7 @@ class NetworkSource {
     required this.site,
     required this.pages,
     this.render = false,
+    this.saved,
   });
 
   factory NetworkSource.fromJson(Map<String, Object?> json) => NetworkSource(
@@ -34,6 +35,9 @@ class NetworkSource {
     site: json['site']! as String,
     pages: (json['pages']! as List<Object?>).cast<String>(),
     render: json['render'] as bool? ?? false,
+    saved: json['saved'] == null
+        ? null
+        : SavedPage.fromJson(json['saved']! as Map<String, Object?>),
   );
 
   final String id;
@@ -47,6 +51,28 @@ class NetworkSource {
   final String site;
   final List<String> pages;
   final bool render;
+
+  /// A site closed to programs (a bot check): its page saved by a person
+  /// is read instead of the site.
+  final SavedPage? saved;
+}
+
+/// The text of a site's page saved by a person, with the site's icon, in
+/// `clinics/saved/`: `{"text": "clinics/saved/adonis.txt", "icon":
+/// "clinics/saved/adonis.png", "date": "2026-10-27"}`. Read instead of the
+/// site; saved again by hand when the build warns that it is old.
+class SavedPage {
+  const SavedPage({required this.text, required this.date, this.icon});
+
+  factory SavedPage.fromJson(Map<String, Object?> json) => SavedPage(
+    text: json['text']! as String,
+    icon: json['icon'] as String?,
+    date: DateTime.parse(json['date']! as String),
+  );
+
+  final String text;
+  final String? icon;
+  final DateTime date;
 }
 
 /// A city of the index: its key and its names.
@@ -182,10 +208,19 @@ String normalizeAddress(String address) => address
     .where((String w) => w.isNotEmpty && !_streetWords.contains(w))
     .join(' ');
 
-/// `kyiv` from «Kyiv», `warszawa` from «Warszawa», `bialystok` from
-/// «Białystok».
-String cityKey(String english) {
+/// The key of a city from its local name in plain Latin letters: `kyiv`
+/// from «Київ», `warszawa` from «Warszawa», `bialystok` from «Białystok».
+/// The local name, not the English one: the model writes Warsaw on one page
+/// and Warszawa on another, while the local name stays the same.
+String cityKey(String local) {
   const Map<String, String> plain = <String, String>{
+    // Ukrainian (the national transliteration), and the Russian letters.
+    'а': 'a', 'б': 'b', 'в': 'v', 'г': 'h', 'ґ': 'g', 'д': 'd', 'е': 'e',
+    'є': 'ie', 'ж': 'zh', 'з': 'z', 'и': 'y', 'і': 'i', 'ї': 'i', 'й': 'i',
+    'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r',
+    'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'kh', 'ц': 'ts', 'ч': 'ch',
+    'ш': 'sh', 'щ': 'shch', 'ь': '', "'": '', '’': '', 'ю': 'iu', 'я': 'ia',
+    'ы': 'y', 'э': 'e', 'ё': 'e', 'ъ': '',
     'ą': 'a',
     'ć': 'c',
     'ę': 'e',
@@ -214,7 +249,7 @@ String cityKey(String english) {
     'ö': 'o',
     'ä': 'a',
   };
-  return english
+  return local
       .toLowerCase()
       .split('')
       .map((String c) => plain[c] ?? c)
@@ -239,7 +274,11 @@ String? normalizePhone(String raw, String country) {
   }
   final String code = _dialCodes[country] ?? '';
   final String full;
-  if (raw.trim().startsWith('+') || raw.trim().startsWith('00')) {
+  if (code == '380' && digits.startsWith('30') && !digits.startsWith('380')) {
+    // «0 800 …» written by the model as «+3 0800 …»: a national number with
+    // half of the code; a Greek number is not expected at a Ukrainian clinic.
+    full = '38${digits.substring(1)}';
+  } else if (raw.trim().startsWith('+') || raw.trim().startsWith('00')) {
     full = digits.startsWith('00') ? digits.substring(2) : digits;
   } else if (code == '380' && digits.startsWith('380')) {
     full = digits;

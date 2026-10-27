@@ -12,3 +12,7 @@ dist/sources_page/
 # What the build scripts write before publish.dart checks it.
 build/
 _site/
+
+# A page saved by hand is kept as its text only (clinics/saved/*.txt).
+clinics/saved/*.html
+clinics/saved/*_files/
