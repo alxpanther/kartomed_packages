@@ -1,0 +1,179 @@
+name: Kartomed clinics
+
+# Collects the clinic and laboratory networks of clinics/sources.json from
+# their sites once a month (and on demand): Chrome renders the pages whose
+# list a script draws, Claude reads the branches out of the text. When any
+# network changed, commits public/ and publishes public/packages/ on both
+# hosts the application reads: the Cloudflare R2 bucket `kartomed`
+# (https://kartomed.foleks.com/packages/) first, GitHub Pages as its copy.
+#
+# A network that could not be read keeps its previous data and becomes a
+# warning in Telegram; a failed check publishes nothing. A push that changes
+# public/packages/ by hand publishes it without collecting.
+
+on:
+  schedule:
+    # The 3rd: two days before the dictionaries, never at the same time.
+    - cron: '0 6 3 * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/packages/**'
+      - '.github/workflows/kartomed-clinics.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Shared with the dictionaries workflow: never two runs pushing to main or
+# deploying Pages at once.
+concurrency:
+  group: kartomed-publication
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - run: dart pub get
+
+      - name: Check the scripts
+        run: |
+          dart analyze --fatal-infos
+          dart test
+
+      - name: Collect, check and publish into public/
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: ./build_clinics.sh
+
+      - name: Send the warnings of the build
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          [ -s build/warnings.txt ] || exit 0
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed clinics: warning
+          $(cat build/warnings.txt)"
+
+      - name: Commit public/ (if changed)
+        id: commit
+        run: |
+          git add public
+          if git diff --staged --quiet; then
+            echo "Nothing changed, nothing to publish."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update the Kartomed clinics [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed, retrying..."
+            sleep 10
+          done
+          echo "Could not push the clinics after 3 attempts." >&2
+          exit 1
+
+      - name: Send the errors of the build
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed clinics: the build failed, nothing was published.
+          $(cat build/errors.txt 2>/dev/null)
+          ${RUN_URL}"
+
+  publish:
+    needs: build
+    if: >-
+      always() &&
+      (github.event_name == 'push' || needs.build.outputs.changed == 'true')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Upload to Cloudflare R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # Nothing collected yet (the push that brings this workflow): nothing
+          # to upload.
+          if [ ! -f public/packages/index.json ]; then
+            echo "No public/packages/index.json yet, nothing to upload."
+            exit 0
+          fi
+          npm install -g wrangler
+          put() {
+            echo "Uploading $1"
+            wrangler r2 object put "kartomed/$1" --file="public/$1" \
+              --content-type="$2" --cache-control="no-cache" --remote
+          }
+          for file in public/packages/*.json public/packages/logos/*.png; do
+            [ -e "$file" ] || continue
+            name="${file#public/}"
+            case "$name" in
+              packages/index.json) continue ;;
+              *.png) put "$name" "image/png" ;;
+              *) put "$name" "application/json; charset=utf-8" ;;
+            esac
+          done
+          put index.html "text/html; charset=utf-8"
+          put index.css "text/css; charset=utf-8"
+          # Last: a phone that reads the new index finds every file it names
+          # already in place.
+          put packages/index.json "application/json; charset=utf-8"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: pages
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [build, publish]
+    if: always() && needs.publish.result == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send the error of the publication
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=Kartomed clinics: the publication failed.
+          ${RUN_URL}"

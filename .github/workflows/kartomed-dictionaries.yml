@@ -20,7 +20,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'public/**'
+      - 'public/dictionaries/**'
+      - 'public/index.*'
       - '.github/workflows/kartomed-dictionaries.yml'
 
 permissions:
@@ -28,9 +29,10 @@ permissions:
   pages: write
   id-token: write
 
-# Never two runs pushing to main or deploying Pages at once.
+# Never two runs pushing to main or deploying Pages at once — the clinics
+# workflow shares the group.
 concurrency:
-  group: kartomed-dictionaries
+  group: kartomed-publication
   cancel-in-progress: false
 
 jobs:

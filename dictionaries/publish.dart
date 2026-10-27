@@ -8,7 +8,6 @@
 // A failed check publishes nothing — the previous files stay — writes the
 // problems into `build/errors.txt` (sent to Telegram by the workflow) and
 // ends with an error.
-import 'dart:convert';
 import 'dart:io';
 
 import 'src/package_writer.dart';
@@ -34,14 +33,7 @@ Future<void> main() async {
   }
   final bool changed = publish(built, published, DateTime.now());
   if (changed) {
-    final Map<String, Object?> manifest = jsonDecode(
-      published.file(manifestName).readAsStringSync(),
-    ) as Map<String, Object?>;
-    writePage(
-      Directory(publicDir).parent.path,
-      published.dictionaries(),
-      manifest['built']! as String,
-    );
+    writePage(Directory(publicDir).parent.path);
   }
   stdout.writeln(
     changed

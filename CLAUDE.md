@@ -32,6 +32,18 @@ releases. Read `README.md` first: layout, checks, hosts, the Russian edition, se
   mixed alphabets) protect the users from a broken source: never weaken them to make a run pass.
   Fix the script instead.
 
+## The clinic packages — `public/packages/`
+
+Built by `clinics/collect_clinics.dart` (`./build_clinics.sh`): the pages of
+`clinics/sources.json`, read by Claude (key `ANTHROPIC_API_KEY`). The layout (`index.json`,
+`<id>.json`, `logos/`) is described in `clinics/src/clinic_publication.dart` and
+`clinics/src/clinic_network.dart` and read by every installed application (`ClinicPackageIndex`,
+`ClinicNetworkPackage`): the same rules as for the dictionaries — no change of the layout
+without the owner, a new `indexFormat` for an incompatible one. A branch's `ref` must stay
+stable: the application finds the same branch next month by it. Never weaken `checkNetworks()`
+or the 30 % drop rule. Every run of the collection costs money (the model): run it only with
+the owner's consent, preferably `--only=<id>` or `--dry-run` while working on one site.
+
 ## Checks before «done»
 
 ```bash

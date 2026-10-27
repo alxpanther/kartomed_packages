@@ -1,0 +1,19 @@
+[
+  {"id": "medikom", "name": "Медіком", "kind": "clinic", "country": "UA", "site": "https://medikom.ua/", "pages": ["https://medikom.ua/"]},
+  {"id": "isida", "name": "Ісіда", "kind": "clinic", "country": "UA", "site": "https://isida.ua/", "pages": ["https://isida.ua/contacts/"]},
+  {"id": "smart-medical-center", "name": "Smart Medical Center", "kind": "clinic", "country": "UA", "site": "https://smartmedicalcenter.ua/", "pages": ["https://smartmedicalcenter.ua/"]},
+  {"id": "meddiagnostica", "name": "Меддіагностика", "kind": "clinic", "country": "UA", "site": "https://www.meddiagnostica.com.ua/", "pages": ["https://www.meddiagnostica.com.ua/contacts/"]},
+  {"id": "astra-medika", "name": "Астра Медіка", "kind": "clinic", "country": "UA", "site": "https://astramedika.com.ua/", "pages": ["https://astramedika.com.ua/kontakti"]},
+  {"id": "harmony-health", "name": "Гармонія здоров'я", "kind": "clinic", "country": "UA", "site": "https://harmony-health.com.ua/", "pages": ["https://harmony-health.com.ua/ua/kontakty/"]},
+  {"id": "viva-clinic", "name": "Віва", "kind": "clinic", "country": "UA", "site": "https://viva.clinic/", "pages": ["https://viva.clinic/kontakti/"]},
+  {"id": "oxford-medical", "name": "Оксфорд Медікал", "kind": "clinic", "country": "UA", "site": "https://oxford-med.com.ua/", "pages": ["https://oxford-med.com.ua/contacts/"]},
+  {"id": "dobrobut", "name": "Добробут", "kind": "clinic", "country": "UA", "site": "https://dobrobut.com/", "pages": ["https://dobrobut.com/ua/clinics?type=1"]},
+  {"id": "medlabtest", "name": "Медлабтест", "kind": "lab", "country": "UA", "site": "https://medlabtest.ua/", "pages": ["https://medlabtest.ua/uk/contacts/kiev"]},
+  {"id": "dila", "name": "ДІЛА", "kind": "lab", "country": "UA", "site": "https://dila.ua/", "pages": ["https://dila.ua/contacts.html"]},
+  {"id": "synevo-ua", "name": "Synevo", "kind": "lab", "country": "UA", "site": "https://www.synevo.ua/", "pages": ["https://www.synevo.ua/info/centers/kyiv"], "render": true},
+  {"id": "astramed-warszawa", "name": "Astramed", "kind": "clinic", "country": "PL", "site": "https://astramed.waw.pl/", "pages": ["https://astramed.waw.pl/ru/kontakt"]},
+  {"id": "synevo-pl", "name": "Synevo", "kind": "lab", "country": "PL", "site": "https://synevo.pl/", "pages": ["https://synevo.pl/punkty-pobran/"]},
+  {"id": "dobroclinic", "name": "Dobroclinic", "kind": "clinic", "country": "CZ", "site": "https://dobroclinic.cz/", "pages": ["https://dobroclinic.cz/contacts/"]},
+  {"id": "medicamente", "name": "Medicamente", "kind": "clinic", "country": "CZ", "site": "https://medicamente.cz/", "pages": ["https://medicamente.cz/контакты.html"]},
+  {"id": "invitro-me", "name": "Invitro", "kind": "lab", "country": "ME", "site": "https://www.invitro.co.me/", "pages": ["https://www.invitro.co.me/"]}
+]

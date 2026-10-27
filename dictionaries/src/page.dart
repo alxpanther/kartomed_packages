@@ -4,9 +4,11 @@
 // reviewers open what the listing names, so each host answers with a
 // readable page instead of a 404: what the publication is, the dictionaries
 // with their counts and the official sources they are built from — the same
-// sources as «About → Legal information» of the application. The styles are
+// sources as «About → Legal information» of the application — and the clinic
+// networks with the sites their contacts are taken from. The styles are
 // a file of their own: the security policy of foleks.com
 // (`style-src 'self'`) drops a <style> written inside the page.
+import 'dart:convert';
 import 'dart:io';
 
 import 'publication.dart';
@@ -55,13 +57,16 @@ a { color: #1f8a78; }
 }
 ''';
 
-/// Writes `index.html` and `index.css` into [root], the folder above
-/// [publicDir], from the published [dictionaries] and the date [built].
-void writePage(
-  String root,
-  Map<String, FolderDictionary> dictionaries,
-  String built,
-) {
+/// Writes `index.html` and `index.css` into [root] (`public/`) from what is
+/// published there: the dictionaries of [publicDir] and the clinic networks
+/// of `packages/index.json`. Both build scripts call it after a change.
+void writePage(String root) {
+  final DictionaryFolder folder = DictionaryFolder(publicDir);
+  final Map<String, FolderDictionary> dictionaries = folder.dictionaries();
+  final String built =
+      (jsonDecode(folder.file(manifestName).readAsStringSync())
+              as Map<String, Object?>)['built']!
+          as String;
   final StringBuffer rows = StringBuffer();
   for (final String name in _titles.keys) {
     final FolderDictionary? d = dictionaries[name];
@@ -100,6 +105,7 @@ $rows</table>
 <h2>Sources</h2>
 <ul>
 $_sources</ul>
+${_clinics(root)}
 <p class="note">The same files: <a href="https://kartomed.foleks.com/">kartomed.foleks.com</a>
 and the copy <a href="https://alxpanther.github.io/kartomed_packages/">alxpanther.github.io/kartomed_packages</a>.</p>
 </main>
@@ -107,4 +113,40 @@ and the copy <a href="https://alxpanther.github.io/kartomed_packages/">alxpanthe
 </html>
 ''');
   File('$root/index.css').writeAsStringSync(_styles);
+}
+
+String _escape(String s) =>
+    s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+
+/// The clinic networks of `packages/index.json`: the contacts the
+/// application offers to download, each with the site it is taken from.
+String _clinics(String root) {
+  final File file = File('$root/packages/index.json');
+  if (!file.existsSync()) {
+    return '';
+  }
+  final Map<String, Object?> index =
+      jsonDecode(file.readAsStringSync()) as Map<String, Object?>;
+  final StringBuffer rows = StringBuffer();
+  for (final Object? n in (index['networks']! as Map<String, Object?>).values) {
+    final Map<String, Object?> network = n! as Map<String, Object?>;
+    final int branches = (network['cities']! as Map<String, Object?>).values
+        .fold(0, (int sum, Object? c) => sum + (c! as int));
+    final String site = network['site']! as String;
+    rows.writeln(
+      '<tr><td>${_escape(network['name']! as String)}</td>'
+      '<td>${network['country']}</td><td class="n">$branches</td>'
+      '<td><a href="${_escape(site)}">${_escape(Uri.parse(site).host)}</a></td></tr>',
+    );
+  }
+  return '''
+<h2>Clinics and laboratories</h2>
+<p>Addresses, phones and opening hours of clinic and laboratory networks,
+taken once a month from the networks' own public contact pages. The app
+downloads only the networks its user chooses.</p>
+<table>
+<tr><th>Network</th><th>Country</th><th>Addresses</th><th>Source</th></tr>
+$rows</table>
+<p class="note">Built ${index['built']} ·
+<a href="packages/index.json">index.json</a></p>''';
 }
