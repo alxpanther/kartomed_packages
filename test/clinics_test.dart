@@ -95,6 +95,21 @@ void main() {
     ]);
   });
 
+  test('a source is collected on GitHub unless it is marked local', () {
+    NetworkSource source(Map<String, Object?> extra) =>
+        NetworkSource.fromJson(<String, Object?>{
+          'id': 'synevo-ua',
+          'name': 'Synevo',
+          'kind': 'lab',
+          'country': 'UA',
+          'site': 'https://www.synevo.ua/',
+          'pages': <String>['https://www.synevo.ua/info/centers/kyiv'],
+          ...extra,
+        });
+    expect(source(<String, Object?>{}).local, isFalse);
+    expect(source(<String, Object?>{'local': true}).local, isTrue);
+  });
+
   group('ClaudeExtractor', () {
     const NetworkSource source = NetworkSource(
       id: 'test',
@@ -183,6 +198,32 @@ void main() {
         expect(b.schedule['1'], <String>['08:00-20:00']);
       },
     );
+
+    test('a Ukrainian or Russian city name with Latin letters is left out', () {
+      final Extracted read = parseAnswer(<String, Object?>{
+        'branches': <Object?>[
+          <String, Object?>{
+            'cityEn': 'Bytom',
+            'cityUk': 'Бytом',
+            'cityRu': 'Бытом',
+            'cityLocal': 'Bytom',
+            'address': 'ul. Dworcowa 1',
+            'postcode': '',
+            'phones': <Object?>[],
+            'emails': <Object?>[],
+            'schedule': <String, Object?>{},
+            'hoursNote': '',
+          },
+        ],
+        'networkPhones': <Object?>[],
+        'networkEmails': <Object?>[],
+      });
+      expect(read.branches.single.city.names, <String, String>{
+        'ru': 'Бытом',
+        'en': 'Bytom',
+        'local': 'Bytom',
+      });
+    });
 
     test('an answer cut short is a failure', () async {
       final ClaudeExtractor extractor = ClaudeExtractor(

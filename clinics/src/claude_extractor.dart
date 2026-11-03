@@ -60,7 +60,9 @@ class ClaudeExtractor {
       ],
     });
     if (response['stop_reason'] != 'end_turn') {
-      throw ExtractionFailed('the answer stopped: ${response['stop_reason']}');
+      throw ExtractionFailed(
+        'ответ модели оборвался: ${response['stop_reason']}',
+      );
     }
     final String answer = <String>[
       for (final Object? block in response['content']! as List<Object?>)
@@ -72,7 +74,7 @@ class ClaudeExtractor {
   static Future<Map<String, Object?>> _post(Map<String, Object?> body) async {
     final String? key = Platform.environment['ANTHROPIC_API_KEY'];
     if (key == null || key.isEmpty) {
-      throw ExtractionFailed('ANTHROPIC_API_KEY is not set');
+      throw ExtractionFailed('не задан ключ ANTHROPIC_API_KEY');
     }
     for (int attempt = 1; ; attempt++) {
       final HttpClient client = HttpClient();
@@ -97,7 +99,9 @@ class ClaudeExtractor {
           continue;
         }
         if (response.statusCode != HttpStatus.ok) {
-          throw ExtractionFailed('Claude ${response.statusCode}: $text');
+          throw ExtractionFailed(
+            'Claude ответил ошибкой ${response.statusCode}: $text',
+          );
         }
         return jsonDecode(text) as Map<String, Object?>;
       } finally {
@@ -106,6 +110,8 @@ class ClaudeExtractor {
     }
   }
 }
+
+final RegExp _latin = RegExp('[A-Za-z]');
 
 /// The answer of the model as branches, empty strings read as «none».
 Extracted parseAnswer(Map<String, Object?> json) {
@@ -134,7 +140,12 @@ Extracted parseAnswer(Map<String, Object?> json) {
                   if (text(
                         branch['city${lang[0].toUpperCase()}${lang.substring(1)}'],
                       )
-                      case final String name)
+                      case final String name
+                      // «Бytом»: a Ukrainian or Russian name with Latin
+                      // letters is a slip of the model; the application
+                      // shows the English one instead.
+                      when (lang != 'uk' && lang != 'ru') ||
+                          !_latin.hasMatch(name))
                     lang: name,
               },
             ),

@@ -41,10 +41,27 @@ Future<String?> downloadPage(Uri url) async {
 
 /// The HTML of [url] after its scripts ran, from Chrome without a window.
 /// The ubuntu runners of GitHub Actions have `google-chrome` installed.
+/// Chrome now and then hangs on a page and never exits: such a Chrome is
+/// killed and the page is rendered again.
 Future<String?> renderPage(Uri url) async {
+  for (int attempt = 1; attempt <= 3; attempt++) {
+    final String? page = await _renderOnce(url);
+    if (page != null) {
+      return page;
+    }
+  }
+  return null;
+}
+
+Future<String?> _renderOnce(Uri url) async {
   final String chrome = Platform.environment['CHROME'] ?? 'google-chrome';
   try {
-    final ProcessResult result = await Process.run(chrome, <String>[
+    // `timeout` kills the whole process group of Chrome: its renderers
+    // would otherwise keep the output open after Chrome itself is gone.
+    final ProcessResult result = await Process.run('timeout', <String>[
+      '--kill-after=10',
+      '60',
+      chrome,
       '--headless=new',
       '--disable-gpu',
       '--no-sandbox',
@@ -53,7 +70,7 @@ Future<String?> renderPage(Uri url) async {
       '--virtual-time-budget=20000',
       '--dump-dom',
       url.toString(),
-    ], stdoutEncoding: utf8).timeout(const Duration(minutes: 2));
+    ], stdoutEncoding: utf8);
     final String out = result.stdout as String;
     return result.exitCode == 0 && out.isNotEmpty ? out : null;
   } on Object {
@@ -144,7 +161,7 @@ String pageText(String page) {
 
 /// [text] cut at line ends into parts of at most [size] characters, so a
 /// long list of addresses goes to the model in several requests.
-List<String> chunks(String text, {int size = 60000}) {
+List<String> chunks(String text, {int size = 20000}) {
   final List<String> out = <String>[];
   final StringBuffer part = StringBuffer();
   for (final String line in text.split('\n')) {

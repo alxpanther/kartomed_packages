@@ -67,7 +67,7 @@ jobs:
           [ -s build/warnings.txt ] || exit 0
           curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=Kartomed clinics: warning
+            --data-urlencode "text=Kartomed, клиники: предупреждение
           $(cat build/warnings.txt)"
 
       - name: Commit public/ (if changed)
@@ -102,7 +102,7 @@ jobs:
         run: |
           curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=Kartomed clinics: the build failed, nothing was published.
+            --data-urlencode "text=Kartomed, клиники: сборка не удалась, ничего не опубликовано.
           $(cat build/errors.txt 2>/dev/null)
           ${RUN_URL}"
 
@@ -175,5 +175,5 @@ jobs:
         run: |
           curl -sS -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=Kartomed clinics: the publication failed.
+            --data-urlencode "text=Kartomed, клиники: публикация не удалась.
           ${RUN_URL}"

@@ -2,10 +2,14 @@
 // into build/packages/, checks them and publishes what changed into
 // public/packages/ (see src/clinic_publication.dart).
 //
-//   dart run clinics/collect_clinics.dart [--only=id,id] [--dry-run]
+//   dart run clinics/collect_clinics.dart [--only=id,id] [--local] [--dry-run]
 //
 // --only     collects only these networks; the others keep their
 //            published files.
+// --local    collects only the networks marked `local` (sites that do not
+//            answer the servers of GitHub); run on the owner's computer.
+//            On GitHub such networks are skipped and only become a
+//            reminder when their last collection is old.
 // --dry-run  only downloads the pages and writes their text into
 //            tmp/clinics/<id>.txt: no model, no publication. For checking
 //            what a page gives before adding it.
@@ -25,6 +29,13 @@ import 'src/page_text.dart';
 
 const String _warningsFile = 'build/warnings.txt';
 const String _errorsFile = 'build/errors.txt';
+
+/// When each `local` network was last collected: `{"synevo-ua":
+/// "2026-11-03"}`. Written by the computer's run, read on GitHub.
+const String _localDatesFile = 'clinics/collected_locally.json';
+
+/// A `local` network collected longer ago than this is reminded of.
+const Duration _localAge = Duration(days: 20);
 
 /// A saved page older than this is reported: its network may have changed.
 const Duration _savedAge = Duration(days: 90);
@@ -55,9 +66,26 @@ Future<void> main(List<String> args) async {
   Directory('$clinicsBuildDir/logos').createSync(recursive: true);
   final List<String> warnings = <String>[];
   final ClaudeExtractor extractor = ClaudeExtractor();
+  final bool local = args.contains('--local');
+  final bool onGitHub = Platform.environment['GITHUB_ACTIONS'] == 'true';
+  final Map<String, DateTime> localDates = _readLocalDates();
+  final DateTime today = DateTime.now();
 
   for (final NetworkSource source in sources) {
-    if (only != null && !only.contains(source.id)) {
+    if (source.local && onGitHub) {
+      _keepPublished(source.id);
+      final DateTime? last = localDates[source.id];
+      if (last == null || today.difference(last) > _localAge) {
+        warnings.add(
+          '${source.id}: собирается только на компьютере'
+          '${last == null ? '' : ', последний раз ${_day(last)}'} '
+          '— запустите ./build_clinics.sh --local и отправьте изменения на GitHub',
+        );
+      }
+      continue;
+    }
+    if ((only != null && !only.contains(source.id)) ||
+        (local && !source.local)) {
       _keepPublished(source.id);
       continue;
     }
@@ -74,7 +102,7 @@ Future<void> main(List<String> args) async {
       final int before = _publishedBranches(source.id);
       if (network.branches.length < before * (1 - maxBranchDrop)) {
         throw ExtractionFailed(
-          '${network.branches.length} branches, published $before',
+          'найдено пунктов: ${network.branches.length}, а опубликовано было $before',
         );
       }
       File('$clinicsBuildDir/${source.id}.json').writeAsStringSync(
@@ -86,8 +114,8 @@ Future<void> main(List<String> args) async {
       if (source.saved case final SavedPage saved
           when DateTime.now().difference(saved.date) > _savedAge) {
         warnings.add(
-          '${source.id}: the saved page is of ${saved.date.toIso8601String().split('T').first} '
-          '— open ${source.pages.first} and save it again',
+          '${source.id}: сохранённая страница от ${saved.date.toIso8601String().split('T').first} '
+          '— откройте ${source.pages.first} и сохраните её заново',
         );
       }
       if (icon != null) {
@@ -95,12 +123,15 @@ Future<void> main(List<String> args) async {
       } else {
         _keepPublishedLogo(source.id);
       }
+      if (source.local) {
+        localDates[source.id] = today;
+      }
       stdout.writeln(
         '  ${network.branches.length} branches'
         '${icon == null ? ', no icon' : ''}',
       );
     } on Object catch (error) {
-      warnings.add('${source.id}: $error — the previous data is kept');
+      warnings.add('${source.id}: $error — оставлены прежние данные');
       stdout.writeln('  failed: $error');
       _keepPublished(source.id);
     }
@@ -125,8 +156,35 @@ Future<void> main(List<String> args) async {
   if (changed) {
     writePage(Directory(clinicsPublicDir).parent.path);
   }
+  if (!onGitHub) {
+    _writeLocalDates(localDates);
+  }
   stdout.writeln(changed ? 'Clinics: published' : 'Clinics: nothing changed');
 }
+
+Map<String, DateTime> _readLocalDates() {
+  final File file = File(_localDatesFile);
+  if (!file.existsSync()) {
+    return <String, DateTime>{};
+  }
+  return <String, DateTime>{
+    for (final MapEntry<String, Object?> e in (jsonDecode(
+      file.readAsStringSync(),
+    ) as Map<String, Object?>).entries)
+      e.key: DateTime.parse(e.value! as String),
+  };
+}
+
+void _writeLocalDates(Map<String, DateTime> dates) {
+  if (dates.isEmpty) {
+    return;
+  }
+  File(_localDatesFile).writeAsStringSync(
+    '${const JsonEncoder.withIndent('  ').convert(<String, String>{for (final String id in dates.keys.toList()..sort()) id: _day(dates[id]!)})}\n',
+  );
+}
+
+String _day(DateTime date) => date.toIso8601String().split('T').first;
 
 /// The text of every page of [source], one after another; the saved page
 /// for a site closed to programs.
@@ -151,7 +209,7 @@ Future<String> _textOf(NetworkSource source) async {
       }
     }
     if (text == null || text.isEmpty) {
-      throw ExtractionFailed('$page gave no page');
+      throw ExtractionFailed('страница $page не открылась');
     }
     parts.add(text);
   }
@@ -178,7 +236,7 @@ Future<Network> _read(
     }
   }
   if (branches.isEmpty) {
-    throw ExtractionFailed('no branches found');
+    throw ExtractionFailed('не найдено ни одного пункта');
   }
   return Network(
     source: source,

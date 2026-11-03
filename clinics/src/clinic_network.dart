@@ -24,6 +24,7 @@ class NetworkSource {
     required this.site,
     required this.pages,
     this.render = false,
+    this.local = false,
     this.saved,
   });
 
@@ -35,6 +36,7 @@ class NetworkSource {
     site: json['site']! as String,
     pages: (json['pages']! as List<Object?>).cast<String>(),
     render: json['render'] as bool? ?? false,
+    local: json['local'] as bool? ?? false,
     saved: json['saved'] == null
         ? null
         : SavedPage.fromJson(json['saved']! as Map<String, Object?>),
@@ -51,6 +53,11 @@ class NetworkSource {
   final String site;
   final List<String> pages;
   final bool render;
+
+  /// A site that does not answer the servers of GitHub: collected on the
+  /// owner's computer (`--local`), skipped by the monthly workflow, which
+  /// only reminds when the last collection is old.
+  final bool local;
 
   /// A site closed to programs (a bot check): its page saved by a person
   /// is read instead of the site.

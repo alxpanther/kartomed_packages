@@ -24,10 +24,16 @@
    "local": "Białystok"
   },
   "bielsko-biala": {
-   "uk": "Бельсько-Бяла",
+   "uk": "Бєльсько-Бяла",
    "ru": "Бельско-Бяла",
    "en": "Bielsko-Biała",
    "local": "Bielsko-Biała"
+  },
+  "borne-sulinowo": {
+   "uk": "Борне-Сулінове",
+   "ru": "Борне-Сулиново",
+   "en": "Borne Sulinowo",
+   "local": "Borne Sulinowo"
   },
   "brodnica": {
    "uk": "Бродниця",
@@ -42,7 +48,6 @@
    "local": "Bydgoszcz"
   },
   "bytom": {
-   "uk": "Битом",
    "ru": "Бытом",
    "en": "Bytom",
    "local": "Bytom"
@@ -54,8 +59,8 @@
    "local": "Chełmno"
   },
   "czaplinek": {
-   "uk": "Чаплінек",
-   "ru": "Чаплинек",
+   "uk": "Цаплінек",
+   "ru": "Цаплинек",
    "en": "Czaplinek",
    "local": "Czaplinek"
   },
@@ -66,8 +71,8 @@
    "local": "Częstochowa"
   },
   "czluchow": {
-   "uk": "Члухув",
-   "ru": "Члухув",
+   "uk": "Хлухув",
+   "ru": "Хлухув",
    "en": "Człuchów",
    "local": "Człuchów"
   },
@@ -78,8 +83,8 @@
    "local": "Dobczyce"
   },
   "dzialdowo": {
-   "uk": "Джалдово",
-   "ru": "Джалдово",
+   "uk": "Дзялдово",
+   "ru": "Дзялдово",
    "en": "Działdowo",
    "local": "Działdowo"
   },
@@ -96,7 +101,7 @@
    "local": "Gdynia"
   },
   "gliwice": {
-   "uk": "Глівіце",
+   "uk": "Гливице",
    "ru": "Гливице",
    "en": "Gliwice",
    "local": "Gliwice"
@@ -108,8 +113,8 @@
    "local": "Głogów"
   },
   "glowno": {
-   "uk": "Główno",
-   "ru": "Главно",
+   "uk": "Глувно",
+   "ru": "Глувно",
    "en": "Głowno",
    "local": "Głowno"
   },
@@ -120,13 +125,13 @@
    "local": "Gorzów Wielkopolski"
   },
   "grojec": {
-   "uk": "Грующ",
-   "ru": "Грујец",
+   "uk": "Гройець",
+   "ru": "Гройец",
    "en": "Grójec",
    "local": "Grójec"
   },
   "insko": {
-   "uk": "Іньсько",
+   "uk": "Інсько",
    "ru": "Иньско",
    "en": "Ińsko",
    "local": "Ińsko"
@@ -161,9 +166,15 @@
    "en": "Katowice",
    "local": "Katowice"
   },
+  "kielce": {
+   "uk": "Кельці",
+   "ru": "Кельце",
+   "en": "Kielce",
+   "local": "Kielce"
+  },
   "klodzko": {
    "uk": "Клодзько",
-   "ru": "Клодзько",
+   "ru": "Клодзко",
    "en": "Kłodzko",
    "local": "Kłodzko"
   },
@@ -174,13 +185,13 @@
    "local": "Kołobrzeg"
   },
   "konin": {
-   "uk": "Коніп",
+   "uk": "Конін",
    "ru": "Конин",
    "en": "Konin",
    "local": "Konin"
   },
   "kosakowo": {
-   "uk": "Косаковo",
+   "uk": "Косаково",
    "ru": "Косаково",
    "en": "Kosakowo",
    "local": "Kosakowo"
@@ -192,21 +203,21 @@
    "local": "Koszalin"
   },
   "koscierzyna": {
-   "uk": "Коscежина",
-   "ru": "Кошежина",
+   "uk": "Косьцежина",
+   "ru": "Косцежина",
    "en": "Kościerzyna",
    "local": "Kościerzyna"
   },
   "kozuchow": {
    "uk": "Кожухув",
    "ru": "Кожухув",
-   "en": "Kożuchów",
+   "en": "Kozuchow",
    "local": "Kożuchów"
   },
   "krakow": {
    "uk": "Краків",
    "ru": "Краков",
-   "en": "Kraków",
+   "en": "Krakow",
    "local": "Kraków"
   },
   "lublin": {
@@ -218,59 +229,59 @@
   "lobez": {
    "uk": "Лобез",
    "ru": "Лобез",
-   "en": "Łobez",
+   "en": "Lobez",
    "local": "Łobez"
   },
   "lodz": {
    "uk": "Лодзь",
    "ru": "Лодзь",
-   "en": "Łódź",
+   "en": "Lodz",
    "local": "Łódź"
   },
   "mikolow": {
    "uk": "Миколув",
    "ru": "Миколув",
-   "en": "Mikołów",
+   "en": "Mikolow",
    "local": "Mikołów"
   },
   "mscice": {
    "uk": "Мщице",
    "ru": "Мщице",
-   "en": "Mścice",
+   "en": "Mscice",
    "local": "Mścice"
   },
   "myslowice": {
-   "uk": "Мисловиці",
+   "uk": "Мисловице",
    "ru": "Мысловице",
-   "en": "Mysłowice",
+   "en": "Myslowice",
    "local": "Mysłowice"
   },
   "myslenice": {
-   "uk": "Mишленіце",
-   "ru": "Мышленице",
-   "en": "Myślenice",
+   "uk": "Мислениці",
+   "ru": "Мысленицы",
+   "en": "Myslenice",
    "local": "Myślenice"
   },
   "nowa-sol": {
-   "uk": "Нова Суль",
-   "ru": "Нова-Соль",
-   "en": "Nowa Sól",
+   "uk": "Нова Соль",
+   "ru": "Нова Соль",
+   "en": "Nowa Sol",
    "local": "Nowa Sól"
   },
   "piotrkow-trybunalski": {
-   "uk": "Пйотркув-Трибунальський",
+   "uk": "Пйотркув-Трибунальский",
    "ru": "Пётркув-Трибунальски",
-   "en": "Piotrków Trybunalski",
+   "en": "Piotrkow Trybunalski",
    "local": "Piotrków Trybunalski"
   },
   "plock": {
-   "uk": "Плоцьк",
+   "uk": "Плоцк",
    "ru": "Плоцк",
-   "en": "Płock",
+   "en": "Plock",
    "local": "Płock"
   },
   "police": {
-   "uk": "Полиці",
+   "uk": "Поліце",
    "ru": "Полице",
    "en": "Police",
    "local": "Police"
@@ -278,55 +289,55 @@
   "poznan": {
    "uk": "Познань",
    "ru": "Познань",
-   "en": "Poznań",
+   "en": "Poznan",
    "local": "Poznań"
   },
   "przemysl": {
-   "uk": "Перемишль",
+   "uk": "Пшемишль",
    "ru": "Пшемысль",
-   "en": "Przemyśl",
+   "en": "Przemysl",
    "local": "Przemyśl"
   },
   "przybiernow": {
-   "uk": "Пжибернув",
+   "uk": "Пшибернув",
    "ru": "Пшибернув",
-   "en": "Przybiernów",
+   "en": "Przybiernow",
    "local": "Przybiernów"
   },
   "radzymin": {
    "uk": "Радзимін",
-   "ru": "Раджимин",
+   "ru": "Радзымин",
    "en": "Radzymin",
    "local": "Radzymin"
   },
   "resko": {
-   "uk": "Реско",
-   "ru": "Реско",
+   "uk": "Ресько",
+   "ru": "Ресько",
    "en": "Resko",
    "local": "Resko"
   },
   "rumia": {
-   "uk": "Румія",
-   "ru": "Румия",
+   "uk": "Руміа",
+   "ru": "Руми",
    "en": "Rumia",
    "local": "Rumia"
   },
   "rybnik": {
-   "uk": "Рибнік",
+   "uk": "Рибник",
    "ru": "Рыбник",
    "en": "Rybnik",
    "local": "Rybnik"
   },
   "rzeszow": {
    "uk": "Жешув",
-   "ru": "Жешув",
-   "en": "Rzeszów",
+   "ru": "Жешов",
+   "en": "Rzeszow",
    "local": "Rzeszów"
   },
   "skorzewo": {
-   "uk": "Скужево",
-   "ru": "Скужево",
-   "en": "Skórzewo",
+   "uk": "Скожево",
+   "ru": "Скожево",
+   "en": "Skorzewo",
    "local": "Skórzewo"
   },
   "smolec": {
@@ -336,15 +347,15 @@
    "local": "Smolec"
   },
   "sosnowiec": {
-   "uk": "Сосновець",
+   "uk": "Сосновец",
    "ru": "Сосновец",
    "en": "Sosnowiec",
    "local": "Sosnowiec"
   },
   "starogard-gdanski": {
-   "uk": "Старогард-Гданський",
-   "ru": "Старогард-Гданьски",
-   "en": "Starogard Gdański",
+   "uk": "Стародгард-Гданьський",
+   "ru": "Стародгард-Гданьский",
+   "en": "Starogard Gdanski",
    "local": "Starogard Gdański"
   },
   "stepnica": {
@@ -354,15 +365,15 @@
    "local": "Stepnica"
   },
   "steszew": {
-   "uk": "Стеншев",
-   "ru": "Стеншев",
-   "en": "Stęszew",
+   "uk": "Стенжев",
+   "ru": "Стенджев",
+   "en": "Steszew",
    "local": "Stęszew"
   },
   "sulechow": {
    "uk": "Сулехув",
    "ru": "Сулехув",
-   "en": "Sulechów",
+   "en": "Sulechow",
    "local": "Sulechów"
   },
   "szczecin": {
@@ -416,55 +427,55 @@
   "warszawa": {
    "uk": "Варшава",
    "ru": "Варшава",
-   "en": "Warszawa",
+   "en": "Warsaw",
    "local": "Warszawa"
   },
   "wejherowo": {
-   "uk": "Вейхерово",
+   "uk": "Вейгерово",
    "ru": "Вейхерово",
    "en": "Wejherowo",
    "local": "Wejherowo"
   },
   "wegorzyno": {
    "uk": "Венгожино",
-   "ru": "Венгожино",
+   "ru": "Вёгожино",
    "en": "Węgorzyno",
    "local": "Węgorzyno"
   },
   "wieliczka": {
    "uk": "Велічка",
-   "ru": "Величка",
+   "ru": "Велички",
    "en": "Wieliczka",
    "local": "Wieliczka"
   },
   "wloclawek": {
    "uk": "Влоцлавек",
    "ru": "Влоцлавек",
-   "en": "Włocławek",
+   "en": "Wloclawek",
    "local": "Włocławek"
   },
   "wolbrom": {
-   "uk": "Вольбром",
-   "ru": "Вольбром",
+   "uk": "Волбром",
+   "ru": "Волбром",
    "en": "Wolbrom",
    "local": "Wolbrom"
   },
   "wolomin": {
-   "uk": "Воломин",
+   "uk": "Воломін",
    "ru": "Воломин",
-   "en": "Wołomin",
+   "en": "Wolomin",
    "local": "Wołomin"
   },
   "wroclaw": {
    "uk": "Вроцлав",
    "ru": "Вроцлав",
-   "en": "Wrocław",
+   "en": "Wroclaw",
    "local": "Wrocław"
   },
   "wyszkow": {
-   "uk": "Вишкув",
-   "ru": "Вышкув",
-   "en": "Wyszków",
+   "uk": "Вишків",
+   "ru": "Вышков",
+   "en": "Wyszkow",
    "local": "Wyszków"
   },
   "zabrze": {
@@ -480,27 +491,27 @@
    "local": "Zakopane"
   },
   "zabkowice-slaskie": {
-   "uk": "Ґомбковіце-Шльонські",
-   "ru": "Гомбковице-Шленьске",
-   "en": "Ząbkowice Śląskie",
+   "uk": "Ємбковіце-Шльонські",
+   "ru": "Эмбковице-Шленьске",
+   "en": "Zabkowice Slaskie",
    "local": "Ząbkowice Śląskie"
   },
   "zgierz": {
    "uk": "Згеж",
-   "ru": "Згеж",
+   "ru": "Згерж",
    "en": "Zgierz",
    "local": "Zgierz"
   },
   "zielona-gora": {
-   "uk": "Зелена Гура",
+   "uk": "Зелена-Гура",
    "ru": "Зелёна-Гура",
-   "en": "Zielona Góra",
+   "en": "Zielona Gora",
    "local": "Zielona Góra"
   },
   "zary": {
    "uk": "Жари",
    "ru": "Жары",
-   "en": "Żary",
+   "en": "Zary",
    "local": "Żary"
   }
  },
@@ -513,7 +524,7 @@
  "emails": [
   {
    "value": "kontakt@synevo.pl",
-   "label": "kontakt"
+   "label": "Kontakt"
   }
  ],
  "branches": [
@@ -534,7 +545,8 @@
     "5": [
      "07:15-10:30"
     ]
-   }
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
   },
   {
    "ref": "304e202bd234",
@@ -559,7 +571,8 @@
     "5": [
      "08:00-10:00"
     ]
-   }
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
   },
   {
    "ref": "46d1593b1b0a",
@@ -584,7 +597,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
   },
   {
    "ref": "0b3318c99e55",
@@ -612,7 +626,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
   },
   {
    "ref": "6cfad6c4b85a",
@@ -640,7 +655,34 @@
     "6": [
      "07:00-11:30"
     ]
-   }
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
+  },
+  {
+   "ref": "bbe4f49a23e5",
+   "city": "borne-sulinowo",
+   "address": "ul. Orła Białego 5",
+   "postcode": "78-449",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
+     "08:00-10:00"
+    ],
+    "2": [
+     "08:00-10:00"
+    ],
+    "3": [
+     "08:00-10:00"
+    ],
+    "4": [
+     "08:00-10:00"
+    ],
+    "5": [
+     "08:00-10:00"
+    ]
+   },
+   "hoursNote": "Podane godziny dotyczą czynnych pobrań; druga kolumna godzin w tekście nie jest opisana."
   },
   {
    "ref": "71e54e9e4c15",
@@ -665,7 +707,8 @@
     "5": [
      "07:00-14:30"
     ]
-   }
+   },
+   "hoursNote": "Godziny soboty i niedzieli nie zostały podane w tekście; druga kolumna godzin nie jest opisana."
   },
   {
    "ref": "3611d223d819",
@@ -1010,6 +1053,9 @@
     ],
     "6": [
      "07:00-12:30"
+    ],
+    "7": [
+     "08:00-11:30"
     ]
    }
   },
@@ -1022,22 +1068,25 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:00-17:30"
+     "06:00-15:00"
     ],
     "2": [
-     "06:00-17:30"
+     "06:00-15:00"
     ],
     "3": [
-     "06:00-17:30"
+     "06:00-15:00"
     ],
     "4": [
-     "06:00-17:30"
+     "06:00-15:00"
     ],
     "5": [
-     "06:00-17:30"
+     "06:00-15:00"
     ],
     "6": [
      "08:00-13:00"
+    ],
+    "7": [
+     "08:00-11:30"
     ]
    }
   },
@@ -1131,19 +1180,19 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:30-14:00"
+     "06:00-13:30"
     ],
     "2": [
-     "06:30-14:00"
+     "06:00-13:30"
     ],
     "3": [
-     "06:30-14:00"
+     "06:00-13:30"
     ],
     "4": [
-     "06:30-14:00"
+     "06:00-13:30"
     ],
     "5": [
-     "06:30-14:00"
+     "06:00-13:30"
     ],
     "6": [
      "07:00-12:00"
@@ -1262,7 +1311,7 @@
      "06:30-14:00"
     ],
     "2": [
-     "06:30-14:00"
+     "06:30-13:30"
     ],
     "3": [
      "06:30-14:00"
@@ -1356,6 +1405,9 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "08:00-11:00"
     ]
    }
   },
@@ -1393,9 +1445,6 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:00-13:00"
-    ],
-    "2": [
      "06:00-13:00"
     ],
     "3": [
@@ -1436,6 +1485,9 @@
      "06:30-14:00"
     ],
     "6": [
+     "06:30-11:00"
+    ],
+    "7": [
      "06:30-11:00"
     ]
    }
@@ -1899,6 +1951,34 @@
    }
   },
   {
+   "ref": "7a6f19805a74",
+   "city": "kielce",
+   "address": "ul. Zagnańska 90/1",
+   "postcode": "25-528",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
+     "06:30-14:00"
+    ],
+    "2": [
+     "06:30-14:00"
+    ],
+    "3": [
+     "06:30-14:00"
+    ],
+    "4": [
+     "06:30-14:00"
+    ],
+    "5": [
+     "06:30-14:00"
+    ],
+    "6": [
+     "07:00-11:00"
+    ]
+   }
+  },
+  {
    "ref": "1208069e3a40",
    "city": "klodzko",
    "address": "pl. Bolesława Chrobrego 19",
@@ -2072,7 +2152,7 @@
      "06:00-14:00"
     ],
     "2": [
-     "06:00-14:00"
+     "06:00-13:30"
     ],
     "3": [
      "06:00-14:00"
@@ -2085,6 +2165,9 @@
     ],
     "6": [
      "07:00-11:00"
+    ],
+    "7": [
+     "08:00-12:00"
     ]
    }
   },
@@ -2107,11 +2190,9 @@
     ],
     "4": [
      "07:00-15:00"
-    ],
-    "5": [
-     "07:00-15:00"
     ]
-   }
+   },
+   "hoursNote": "Ostatni wpis na stronie dotyczy tylko dni od poniedziałku do środy; czwartek, piątek i weekend nie są podane w tekście."
   },
   {
    "ref": "2df4472972ad",
@@ -2186,7 +2267,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30"
   },
   {
    "ref": "2c77a4096a56",
@@ -2239,7 +2321,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30"
   },
   {
    "ref": "8e3b2eb1a6d1",
@@ -2267,7 +2350,8 @@
     "6": [
      "07:00-13:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 07:00–12:30"
   },
   {
    "ref": "9b03e8a89bf4",
@@ -2295,7 +2379,8 @@
     "6": [
      "07:00-13:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob. 07:00–12:30"
   },
   {
    "ref": "4cf40c924bd1",
@@ -2322,8 +2407,12 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "07:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob.–niedz. 07:00–11:30"
   },
   {
    "ref": "4659286621f3",
@@ -2351,7 +2440,8 @@
     "6": [
      "07:00-13:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob. 07:00–12:45"
   },
   {
    "ref": "7c20b322561a",
@@ -2379,7 +2469,8 @@
     "6": [
      "07:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob. 07:00–11:30"
   },
   {
    "ref": "ebde5f26646b",
@@ -2404,7 +2495,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30"
   },
   {
    "ref": "552907b8d6fd",
@@ -2482,7 +2574,8 @@
     "6": [
      "07:00-13:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 07:00–14:00, sob. 07:00–12:30"
   },
   {
    "ref": "f831a567e718",
@@ -2535,7 +2628,8 @@
     "6": [
      "08:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 08:00–11:30"
   },
   {
    "ref": "2af3cbc01388",
@@ -2562,8 +2656,12 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 07:00–11:30, niedz. 07:00–10:30"
   },
   {
    "ref": "d432818e3cff",
@@ -2590,8 +2688,12 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 07:00–11:30, niedz. 07:00–10:30"
   },
   {
    "ref": "ad118253a232",
@@ -2619,7 +2721,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 07:00–10:30"
   },
   {
    "ref": "b52007edd0fc",
@@ -2669,7 +2772,8 @@
     "5": [
      "08:00-15:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 08:00–15:15"
   },
   {
    "ref": "c743fc5a8714",
@@ -2722,7 +2826,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: sob. 07:00–10:30"
   },
   {
    "ref": "5b030664f46b",
@@ -2750,7 +2855,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:00, sob. 07:00–10:30"
   },
   {
    "ref": "b5638ee12a67",
@@ -2827,8 +2933,12 @@
     ],
     "6": [
      "07:00-11:00"
+    ],
+    "7": [
+     "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–11:30, sob.–niedz. 07:00–10:30"
   },
   {
    "ref": "2ebd2ccb64df",
@@ -2856,7 +2966,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob. 07:00–11:00"
   },
   {
    "ref": "e9617ab0d827",
@@ -2881,7 +2992,8 @@
     "5": [
      "08:00-14:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 08:00–14:00"
   },
   {
    "ref": "7b2635a45b0a",
@@ -2906,7 +3018,8 @@
     "5": [
      "06:30-14:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:45–13:45"
   },
   {
    "ref": "be319ec62737",
@@ -2934,7 +3047,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: sob. 07:00–10:30"
   },
   {
    "ref": "9af1d4a60a5d",
@@ -2959,7 +3073,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30"
   },
   {
    "ref": "8d1c44a9ed08",
@@ -3012,7 +3127,8 @@
     "6": [
      "08:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–14:00, sob. 08:00–11:45"
   },
   {
    "ref": "a13ac2a845d4",
@@ -3065,7 +3181,8 @@
     "6": [
      "07:30-11:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 07:00–14:30"
   },
   {
    "ref": "153c09350a22",
@@ -3093,7 +3210,8 @@
     "6": [
      "08:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–13:30, sob. 08:00–11:30"
   },
   {
    "ref": "98291f2a5958",
@@ -3174,7 +3292,8 @@
     "6": [
      "08:00-12:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–14:00, sob. 08:00–11:45"
   },
   {
    "ref": "033654f39809",
@@ -3200,6 +3319,9 @@
      "06:30-15:00"
     ],
     "6": [
+     "08:00-12:00"
+    ],
+    "7": [
      "08:00-12:00"
     ]
    }
@@ -3230,7 +3352,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:00–12:00, sob. 07:00–10:00"
   },
   {
    "ref": "2cec2acb1cdc",
@@ -3255,7 +3378,8 @@
     "5": [
      "08:00-10:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 08:00–09:30"
   },
   {
    "ref": "ebfcdd4866e0",
@@ -3283,7 +3407,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–11:00, sob. 07:00–10:00"
   },
   {
    "ref": "7a4c8da9394b",
@@ -3336,7 +3461,8 @@
     "6": [
      "07:00-12:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–13:30, sob. 07:00–12:00"
   },
   {
    "ref": "81ef95037a8e",
@@ -3361,7 +3487,8 @@
     "5": [
      "07:00-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 07:00–13:45"
   },
   {
    "ref": "d96ed63a893d",
@@ -3389,7 +3516,8 @@
     "6": [
      "07:30-11:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: sob. 07:30–11:00"
   },
   {
    "ref": "8543dcbe758d",
@@ -3436,7 +3564,8 @@
     "5": [
      "07:00-14:30"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 07:00–14:00"
   },
   {
    "ref": "0a146dec695a",
@@ -3464,7 +3593,8 @@
     "6": [
      "07:00-11:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 07:00–14:15, sob. 07:00–10:45"
   },
   {
    "ref": "dcec0bb5a9d5",
@@ -3489,7 +3619,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–12:00"
   },
   {
    "ref": "714f8a5e48be",
@@ -3539,7 +3670,8 @@
     "5": [
      "06:30-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn–pt 06:30–12:00"
   },
   {
    "ref": "b983323d4527",
@@ -3564,7 +3696,8 @@
     "5": [
      "07:15-14:00"
     ]
-   }
+   },
+   "hoursNote": "Pobrania: pn 07:00–12:00, wt–pt 07:15–12:00; dane o sobocie i niedzieli nieprzedstawione na stronie"
   },
   {
    "ref": "abb5e0102184",
@@ -3667,8 +3800,7 @@
     "5": [
      "08:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–10:30"
+   }
   },
   {
    "ref": "a86a51ae4940",
@@ -3693,8 +3825,7 @@
     "5": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:30"
+   }
   },
   {
    "ref": "1ab6a0e80bfd",
@@ -3722,8 +3853,7 @@
     "6": [
      "07:30-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:30–12:00"
+   }
   },
   {
    "ref": "e5412d9b0661",
@@ -3748,8 +3878,7 @@
     "5": [
      "08:00-11:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–11:30"
+   }
   },
   {
    "ref": "ee570776f27d",
@@ -3777,8 +3906,7 @@
     "6": [
      "07:30-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:30–12:00"
+   }
   },
   {
    "ref": "ddf00aa0eaa0",
@@ -3806,8 +3934,7 @@
     "6": [
      "07:30-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:00, sb 07:30–12:00"
+   }
   },
   {
    "ref": "07166126a443",
@@ -3832,8 +3959,7 @@
     "5": [
      "08:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–10:30"
+   }
   },
   {
    "ref": "a87a872a7bfc",
@@ -3858,8 +3984,7 @@
     "5": [
      "08:00-11:15"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–11:15"
+   }
   },
   {
    "ref": "64cf07ac56da",
@@ -3887,8 +4012,7 @@
     "6": [
      "07:00-11:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–11:30, sb 07:00–11:00"
+   }
   },
   {
    "ref": "a61c4d263f25",
@@ -3913,8 +4037,7 @@
     "5": [
      "07:15-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:15–12:45"
+   }
   },
   {
    "ref": "7465c4348954",
@@ -3939,8 +4062,7 @@
     "5": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:45"
+   }
   },
   {
    "ref": "50ee2373d12a",
@@ -3965,8 +4087,7 @@
     "5": [
      "07:00-12:45"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:30"
+   }
   },
   {
    "ref": "0e7fc69b75a2",
@@ -3994,8 +4115,7 @@
     "6": [
      "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "523f672cd13b",
@@ -4023,8 +4143,7 @@
     "6": [
      "07:00-10:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:30, sb 07:00–10:00"
+   }
   },
   {
    "ref": "61adf928c41b",
@@ -4052,8 +4171,7 @@
     "6": [
      "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–11:30"
+   }
   },
   {
    "ref": "f04c944ae1e0",
@@ -4078,8 +4196,7 @@
     "5": [
      "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–10:30"
+   }
   },
   {
    "ref": "6a3ec873ea2c",
@@ -4103,9 +4220,11 @@
     ],
     "5": [
      "06:30-11:00"
+    ],
+    "6": [
+     "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–11:00"
+   }
   },
   {
    "ref": "2b558a973dda",
@@ -4133,8 +4252,7 @@
     "6": [
      "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "26abb7e5c1ce",
@@ -4162,8 +4280,7 @@
     "6": [
      "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–14:00, sb 07:00–11:30"
+   }
   },
   {
    "ref": "e119fcc72ef5",
@@ -4190,9 +4307,11 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "08:00-11:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:00, sb 07:00–11:30"
+   }
   },
   {
    "ref": "013f51cdb81c",
@@ -4217,8 +4336,7 @@
     "5": [
      "07:30-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:30–14:00"
+   }
   },
   {
    "ref": "7f9b6e6840d5",
@@ -4245,9 +4363,11 @@
     ],
     "6": [
      "07:00-13:00"
+    ],
+    "7": [
+     "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:00, sb 07:00–12:30"
+   }
   },
   {
    "ref": "5c3b7dd48a29",
@@ -4274,9 +4394,11 @@
     ],
     "6": [
      "07:00-12:30"
+    ],
+    "7": [
+     "07:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:00, sb 07:00–11:30"
+   }
   },
   {
    "ref": "d428249f524c",
@@ -4304,8 +4426,7 @@
     "6": [
      "07:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–11:45"
+   }
   },
   {
    "ref": "4b503ad70d36",
@@ -4333,8 +4454,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:00, sb 07:00–12:30"
+   }
   },
   {
    "ref": "d3c6159f5357",
@@ -4359,8 +4479,7 @@
     "5": [
      "06:30-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30"
+   }
   },
   {
    "ref": "7272cc396fe3",
@@ -4388,8 +4507,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "2fe0be1048f2",
@@ -4416,9 +4534,11 @@
     ],
     "6": [
      "07:00-13:00"
+    ],
+    "7": [
+     "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "e3b4c88052d9",
@@ -4446,8 +4566,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "ef2cbbbbe606",
@@ -4475,8 +4594,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "d39c2c82679e",
@@ -4504,8 +4622,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "2d5dd49a1d2d",
@@ -4533,8 +4650,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "fc397fe76af3",
@@ -4557,13 +4673,12 @@
      "06:30-14:00"
     ],
     "5": [
-     "06:30-13:30"
+     "06:30-14:00"
     ],
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–czw 06:30–13:45, pt 06:30–13:00, sb 07:00–12:30"
+   }
   },
   {
    "ref": "e0aee0ebb608",
@@ -4591,8 +4706,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "545248688c71",
@@ -4617,8 +4731,32 @@
     "5": [
      "07:00-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
+  },
+  {
+   "ref": "36c18a33b5f2",
+   "city": "warszawa",
+   "address": "ul. Patriotów 207",
+   "postcode": "04-858",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
+     "06:30-14:00"
+    ],
+    "2": [
+     "06:30-14:00"
+    ],
+    "3": [
+     "06:30-14:00"
+    ],
+    "4": [
+     "06:30-14:00"
+    ],
+    "5": [
+     "06:30-14:00"
+    ]
+   }
   },
   {
    "ref": "87d3b0c98999",
@@ -4646,8 +4784,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "0afa1ec02b04",
@@ -4672,8 +4809,7 @@
     "5": [
      "06:30-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30"
+   }
   },
   {
    "ref": "7e32e7e5a931",
@@ -4701,8 +4837,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "251ce1a10e14",
@@ -4730,8 +4865,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:00, sb 07:00–12:30"
+   }
   },
   {
    "ref": "dd745dfe20fa",
@@ -4759,8 +4893,7 @@
     "6": [
      "07:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:00"
+   }
   },
   {
    "ref": "1182c15697fd",
@@ -4788,8 +4921,7 @@
     "6": [
      "07:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:00"
+   }
   },
   {
    "ref": "f0412e9ebc97",
@@ -4817,8 +4949,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:30"
+   }
   },
   {
    "ref": "6d8759cc6e17",
@@ -4846,8 +4977,7 @@
     "6": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:00, sb 07:00–12:30"
+   }
   },
   {
    "ref": "cfb7fddfb957",
@@ -4875,8 +5005,7 @@
     "6": [
      "07:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:45, sb 07:00–12:00"
+   }
   },
   {
    "ref": "a7853807d231",
@@ -4887,9 +5016,6 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:30-14:00"
-    ],
-    "2": [
      "06:30-14:00"
     ],
     "3": [
@@ -4904,8 +5030,7 @@
     "6": [
      "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–11:30"
+   }
   },
   {
    "ref": "a0528ca85f4c",
@@ -4930,8 +5055,7 @@
     "5": [
      "08:00-10:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–10:00"
+   }
   },
   {
    "ref": "7bda1c63249e",
@@ -4959,8 +5083,7 @@
     "6": [
      "07:30-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:00, sb 07:30–12:30"
+   }
   },
   {
    "ref": "2b0110195343",
@@ -4988,8 +5111,7 @@
     "6": [
      "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "4cb2e70f24f9",
@@ -5014,8 +5136,7 @@
     "5": [
      "07:00-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
   },
   {
    "ref": "14ded87aa0e9",
@@ -5042,9 +5163,11 @@
     ],
     "6": [
      "07:00-11:00"
+    ],
+    "7": [
+     "08:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "87dea48bb6a8",
@@ -5055,25 +5178,24 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:30-14:00"
+     "06:00-18:00"
     ],
     "2": [
-     "06:30-14:00"
+     "06:00-18:00"
     ],
     "3": [
-     "06:30-14:00"
+     "06:00-18:00"
     ],
     "4": [
-     "06:30-14:00"
+     "06:00-18:00"
     ],
     "5": [
-     "06:30-14:00"
+     "06:00-18:00"
     ],
     "6": [
-     "07:00-11:00"
+     "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "ca2cf2e446bd",
@@ -5101,8 +5223,7 @@
     "6": [
      "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–10:30"
+   }
   },
   {
    "ref": "99615b4a22ba",
@@ -5128,10 +5249,9 @@
      "06:30-14:00"
     ],
     "6": [
-     "08:00-12:00"
+     "07:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 08:00–12:00"
+   }
   },
   {
    "ref": "ceb448f6eed9",
@@ -5157,10 +5277,9 @@
      "06:30-14:00"
     ],
     "6": [
-     "07:00-13:00"
+     "08:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–12:30"
+   }
   },
   {
    "ref": "5857e1b3cf4e",
@@ -5171,25 +5290,24 @@
    "emails": [],
    "schedule": {
     "1": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "2": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "3": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "4": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "5": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "6": [
-     "08:00-12:30"
+     "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00, sb 08:00–12:00"
+   }
   },
   {
    "ref": "999c4c1c85fb",
@@ -5200,32 +5318,6 @@
    "emails": [],
    "schedule": {
     "1": [
-     "07:00-13:00"
-    ],
-    "2": [
-     "07:00-13:00"
-    ],
-    "3": [
-     "07:00-13:00"
-    ],
-    "4": [
-     "07:00-13:00"
-    ],
-    "5": [
-     "07:00-13:00"
-    ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:30"
-  },
-  {
-   "ref": "f527466ab213",
-   "city": "wroclaw",
-   "address": "ul. gen. Augusta Emila Fieldorfa 2",
-   "postcode": "54-049",
-   "phones": [],
-   "emails": [],
-   "schedule": {
-    "1": [
      "07:00-14:30"
     ],
     "2": [
@@ -5243,8 +5335,32 @@
     "6": [
      "08:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:30, sb 08:00–12:30"
+   }
+  },
+  {
+   "ref": "f527466ab213",
+   "city": "wroclaw",
+   "address": "ul. gen. Augusta Emila Fieldorfa 2",
+   "postcode": "54-049",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
+     "07:00-13:00"
+    ],
+    "2": [
+     "07:00-13:00"
+    ],
+    "3": [
+     "07:00-13:00"
+    ],
+    "4": [
+     "07:00-13:00"
+    ],
+    "5": [
+     "07:00-13:00"
+    ]
+   }
   },
   {
    "ref": "87c439647fa0",
@@ -5270,16 +5386,46 @@
      "07:00-14:30"
     ],
     "6": [
-     "08:00-12:00"
+     "08:00-12:30"
+    ],
+    "7": [
+     "08:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00, sb 08:00–11:30"
+   }
   },
   {
    "ref": "77507c6e1db8",
    "city": "wroclaw",
    "address": "ul. Hermanowska 99A",
    "postcode": "54-314",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
+     "07:00-14:30"
+    ],
+    "2": [
+     "07:00-14:30"
+    ],
+    "3": [
+     "07:00-14:30"
+    ],
+    "4": [
+     "07:00-14:30"
+    ],
+    "5": [
+     "07:00-14:30"
+    ],
+    "6": [
+     "08:00-12:00"
+    ]
+   }
+  },
+  {
+   "ref": "d808c9bb363e",
+   "city": "wroclaw",
+   "address": "ul. Jana Sebastiana Bacha 13",
+   "postcode": "50-305",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5298,14 +5444,13 @@
     "5": [
      "06:30-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30"
+   }
   },
   {
-   "ref": "d808c9bb363e",
+   "ref": "5034cad91597",
    "city": "wroclaw",
-   "address": "ul. Jana Sebastiana Bacha 13",
-   "postcode": "50-305",
+   "address": "ul. Kamiennogórska 10",
+   "postcode": "52-007",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5327,14 +5472,13 @@
     "6": [
      "08:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:30, sb 08:00–12:00"
+   }
   },
   {
-   "ref": "5034cad91597",
+   "ref": "e9d838699717",
    "city": "wroclaw",
-   "address": "ul. Kamiennogórska 10",
-   "postcode": "52-007",
+   "address": "ul. Krawiecka 3C",
+   "postcode": "50-148",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5353,14 +5497,13 @@
     "5": [
      "08:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 08:00–12:00"
+   }
   },
   {
-   "ref": "e9d838699717",
+   "ref": "d31bfaae5e88",
    "city": "wroclaw",
-   "address": "ul. Krawiecka 3C",
-   "postcode": "50-148",
+   "address": "ul. Krępicka 1",
+   "postcode": "54-018",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5381,15 +5524,17 @@
     ],
     "6": [
      "08:00-14:00"
+    ],
+    "7": [
+     "08:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn, śr, pt 07:00–14:30; wt, czw 07:00–17:30; sb 08:00–13:30"
+   }
   },
   {
-   "ref": "d31bfaae5e88",
+   "ref": "7f9a06efcd08",
    "city": "wroclaw",
-   "address": "ul. Krępicka 1",
-   "postcode": "54-018",
+   "address": "ul. Krynicka 51/105",
+   "postcode": "50-555",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5411,34 +5556,7 @@
     "6": [
      "08:00-12:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 08:00–12:00"
-  },
-  {
-   "ref": "7f9a06efcd08",
-   "city": "wroclaw",
-   "address": "ul. Krynicka 51/105",
-   "postcode": "50-555",
-   "phones": [],
-   "emails": [],
-   "schedule": {
-    "1": [
-     "07:30-14:30"
-    ],
-    "2": [
-     "07:30-14:30"
-    ],
-    "3": [
-     "07:30-14:30"
-    ],
-    "4": [
-     "07:30-14:30"
-    ],
-    "5": [
-     "07:30-14:30"
-    ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:30–14:00"
+   }
   },
   {
    "ref": "d019b366c334",
@@ -5449,25 +5567,21 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:30-14:00"
+     "07:30-14:30"
     ],
     "2": [
-     "06:30-14:00"
+     "07:30-14:30"
     ],
     "3": [
-     "06:30-14:00"
+     "07:30-14:30"
     ],
     "4": [
-     "06:30-14:00"
+     "07:30-14:30"
     ],
     "5": [
-     "06:30-14:00"
-    ],
-    "6": [
-     "07:00-12:00"
+     "07:30-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:00–11:30"
+   }
   },
   {
    "ref": "bd08e943c641",
@@ -5493,10 +5607,9 @@
      "06:30-14:00"
     ],
     "6": [
-     "08:00-12:00"
+     "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 08:00–11:30"
+   }
   },
   {
    "ref": "14d1224681f2",
@@ -5507,22 +5620,24 @@
    "emails": [],
    "schedule": {
     "1": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "2": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "3": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "4": [
-     "07:00-14:30"
+     "06:30-14:00"
     ],
     "5": [
-     "07:00-14:30"
+     "06:30-14:00"
+    ],
+    "6": [
+     "08:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
   },
   {
    "ref": "92bf24705b7f",
@@ -5533,6 +5648,31 @@
    "emails": [],
    "schedule": {
     "1": [
+     "07:00-14:30"
+    ],
+    "2": [
+     "07:00-14:30"
+    ],
+    "3": [
+     "07:00-14:30"
+    ],
+    "4": [
+     "07:00-14:30"
+    ],
+    "5": [
+     "07:00-14:30"
+    ]
+   }
+  },
+  {
+   "ref": "19f913bdb473",
+   "city": "wroclaw",
+   "address": "ul. Zwycięska 14CA/A",
+   "postcode": "53-033",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
      "06:30-14:00"
     ],
     "2": [
@@ -5547,14 +5687,13 @@
     "5": [
      "06:30-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30"
+   }
   },
   {
-   "ref": "19f913bdb473",
+   "ref": "b1f65656b9f2",
    "city": "wroclaw",
-   "address": "ul. Zwycięska 14CA/A",
-   "postcode": "53-033",
+   "address": "ul. Życzliwa 17",
+   "postcode": "53-030",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5573,14 +5712,13 @@
     "5": [
      "07:00-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
   },
   {
-   "ref": "b1f65656b9f2",
-   "city": "wroclaw",
-   "address": "ul. Życzliwa 17",
-   "postcode": "53-030",
+   "ref": "750b0b756190",
+   "city": "wyszkow",
+   "address": "ul. Komisji Edukacji Narodowej 5",
+   "postcode": "07-200",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5602,14 +5740,13 @@
     "6": [
      "07:30-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–13:30, sb 07:30–11:30"
+   }
   },
   {
-   "ref": "750b0b756190",
-   "city": "wyszkow",
-   "address": "ul. Komisji Edukacji Narodowej 5",
-   "postcode": "07-200",
+   "ref": "b1670bf1bd5b",
+   "city": "zabrze",
+   "address": "ul. Wolności 299/2",
+   "postcode": "41-800",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5631,14 +5768,13 @@
     "6": [
      "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–sb 07:00–11:00"
+   }
   },
   {
-   "ref": "b1670bf1bd5b",
-   "city": "zabrze",
-   "address": "ul. Wolności 299/2",
-   "postcode": "41-800",
+   "ref": "f1d9ab000cc7",
+   "city": "zakopane",
+   "address": "ul. Gimnazjalna 1",
+   "postcode": "34-500",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5657,14 +5793,13 @@
     "5": [
      "07:00-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
   },
   {
-   "ref": "f1d9ab000cc7",
-   "city": "zakopane",
-   "address": "ul. Gimnazjalna 1",
-   "postcode": "34-500",
+   "ref": "c6fa81d29bfa",
+   "city": "zabkowice-slaskie",
+   "address": "ul. Bolesława Chrobrego 5H",
+   "postcode": "57-200",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5686,34 +5821,7 @@
     "6": [
      "07:00-10:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–11:00, sb 07:00–10:00"
-  },
-  {
-   "ref": "c6fa81d29bfa",
-   "city": "zabkowice-slaskie",
-   "address": "ul. Bolesława Chrobrego 5H",
-   "postcode": "57-200",
-   "phones": [],
-   "emails": [],
-   "schedule": {
-    "1": [
-     "07:00-14:30"
-    ],
-    "2": [
-     "07:00-14:30"
-    ],
-    "3": [
-     "07:00-14:30"
-    ],
-    "4": [
-     "07:00-14:30"
-    ],
-    "5": [
-     "07:00-14:30"
-    ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–14:00"
+   }
   },
   {
    "ref": "2236c17e7849",
@@ -5724,22 +5832,21 @@
    "emails": [],
    "schedule": {
     "1": [
-     "06:00-14:00"
+     "07:00-14:30"
     ],
     "2": [
-     "06:00-14:00"
+     "07:00-14:30"
     ],
     "3": [
-     "06:00-14:00"
+     "07:00-14:30"
     ],
     "4": [
-     "06:00-14:00"
+     "07:00-14:30"
     ],
     "5": [
-     "06:00-14:00"
+     "07:00-14:30"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–13:30"
+   }
   },
   {
    "ref": "b2dab52143f7",
@@ -5750,25 +5857,21 @@
    "emails": [],
    "schedule": {
     "1": [
-     "07:00-13:00"
+     "06:00-14:00"
     ],
     "2": [
-     "07:00-13:00"
+     "06:00-14:00"
     ],
     "3": [
-     "07:00-13:00"
+     "06:00-14:00"
     ],
     "4": [
-     "07:00-13:00"
+     "06:00-14:00"
     ],
     "5": [
-     "07:00-13:00"
-    ],
-    "6": [
-     "07:00-12:00"
+     "06:00-14:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:45, sb 07:00–11:45"
+   }
   },
   {
    "ref": "165886e92ce4",
@@ -5779,6 +5882,34 @@
    "emails": [],
    "schedule": {
     "1": [
+     "07:00-13:00"
+    ],
+    "2": [
+     "07:00-13:00"
+    ],
+    "3": [
+     "07:00-13:00"
+    ],
+    "4": [
+     "07:00-13:00"
+    ],
+    "5": [
+     "07:00-13:00"
+    ],
+    "6": [
+     "07:00-12:00"
+    ]
+   }
+  },
+  {
+   "ref": "bfa17081bfed",
+   "city": "zielona-gora",
+   "address": "ul. Osiedle Kaszubskie 3",
+   "postcode": "65-548",
+   "phones": [],
+   "emails": [],
+   "schedule": {
+    "1": [
      "06:45-13:00"
     ],
     "2": [
@@ -5793,14 +5924,13 @@
     "5": [
      "06:45-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:45–13:00"
+   }
   },
   {
-   "ref": "bfa17081bfed",
+   "ref": "d3a153e01289",
    "city": "zielona-gora",
-   "address": "ul. Osiedle Kaszubskie 3",
-   "postcode": "65-548",
+   "address": "ul. Stefana Wyszyńskiego 99/207",
+   "postcode": "65-536",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5821,14 +5951,16 @@
     ],
     "6": [
      "07:00-12:00"
+    ],
+    "7": [
+     "08:00-11:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–14:00, sb 07:00–11:30"
+   }
   },
   {
-   "ref": "d3a153e01289",
+   "ref": "e9023a4585db",
    "city": "zielona-gora",
-   "address": "ul. Stefana Wyszyńskiego 99/207",
+   "address": "ul. Stefana Wyszyńskiego 3",
    "postcode": "65-536",
    "phones": [],
    "emails": [],
@@ -5848,14 +5980,13 @@
     "5": [
      "07:00-13:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:00–12:45"
+   }
   },
   {
-   "ref": "e9023a4585db",
+   "ref": "c160ad78ecd2",
    "city": "zielona-gora",
-   "address": "ul. Stefana Wyszyńskiego 3",
-   "postcode": "65-536",
+   "address": "ul. Zamkowa 7/2A",
+   "postcode": "65-086",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5877,14 +6008,13 @@
     "6": [
      "08:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:30–14:00, sb 08:00–11:45"
+   }
   },
   {
-   "ref": "c160ad78ecd2",
-   "city": "zielona-gora",
-   "address": "ul. Zamkowa 7/2A",
-   "postcode": "65-086",
+   "ref": "f66961c8885a",
+   "city": "zary",
+   "address": "ul. Podchorążych 41",
+   "postcode": "68-200",
    "phones": [],
    "emails": [],
    "schedule": {
@@ -5906,34 +6036,7 @@
     "6": [
      "07:00-12:00"
     ]
-   },
-   "hoursNote": "Pobrania pn–pt 06:00–14:30, sb 07:00–11:45"
-  },
-  {
-   "ref": "f66961c8885a",
-   "city": "zary",
-   "address": "ul. Podchorążych 41",
-   "postcode": "68-200",
-   "phones": [],
-   "emails": [],
-   "schedule": {
-    "1": [
-     "07:00-13:00"
-    ],
-    "2": [
-     "07:00-13:00"
-    ],
-    "3": [
-     "07:00-13:00"
-    ],
-    "4": [
-     "07:00-13:00"
-    ],
-    "5": [
-     "07:00-13:00"
-    ]
-   },
-   "hoursNote": "Pobrania pn–pt 07:30–12:30"
+   }
   }
  ]
 }

@@ -11,7 +11,7 @@
   {"id": "dobrobut", "name": "Добробут", "kind": "clinic", "country": "UA", "site": "https://dobrobut.com/", "pages": ["https://dobrobut.com/ua/clinics?type=1"]},
   {"id": "medlabtest", "name": "Медлабтест", "kind": "lab", "country": "UA", "site": "https://medlabtest.ua/", "pages": ["https://medlabtest.ua/uk/contacts/kiev"]},
   {"id": "dila", "name": "ДІЛА", "kind": "lab", "country": "UA", "site": "https://dila.ua/", "pages": ["https://dila.ua/contacts.html"]},
-  {"id": "synevo-ua", "name": "Synevo", "kind": "lab", "country": "UA", "site": "https://www.synevo.ua/", "pages": ["https://www.synevo.ua/info/centers/kyiv"], "render": true},
+  {"id": "synevo-ua", "name": "Synevo", "kind": "lab", "country": "UA", "site": "https://www.synevo.ua/", "pages": ["https://www.synevo.ua/info/centers/kyiv"], "render": true, "local": true},
   {"id": "astramed-warszawa", "name": "Astramed", "kind": "clinic", "country": "PL", "site": "https://astramed.waw.pl/", "pages": ["https://astramed.waw.pl/ru/kontakt"]},
   {"id": "synevo-pl", "name": "Synevo", "kind": "lab", "country": "PL", "site": "https://synevo.pl/", "pages": ["https://synevo.pl/punkty-pobran/"]},
   {"id": "dobroclinic", "name": "Dobroclinic", "kind": "clinic", "country": "CZ", "site": "https://dobroclinic.cz/", "pages": ["https://dobroclinic.cz/contacts/"]},

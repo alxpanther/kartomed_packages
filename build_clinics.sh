@@ -21,7 +21,7 @@ if [ -z "$ANTHROPIC_API_KEY" ]; then
   exit 1
 fi
 
-rm -rf build/packages tmp/clinics
+rm -rf build/packages build/warnings.txt build/errors.txt tmp/clinics
 dart run clinics/collect_clinics.dart "$@"
 rm -rf tmp/clinics
 rmdir tmp 2>/dev/null || true

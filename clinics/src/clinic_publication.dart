@@ -54,26 +54,26 @@ List<String> checkNetworks(String dir) {
           json['cities']! as Map<String, Object?>;
       final List<Object?> branches = json['branches']! as List<Object?>;
       if (json['id'] != n.key) {
-        problems.add('${n.key}: the file names another id');
+        problems.add('${n.key}: в файле указан другой id');
       }
       if (branches.isEmpty) {
-        problems.add('${n.key}: no branches');
+        problems.add('${n.key}: нет ни одного пункта');
       }
       final Set<String> refs = <String>{};
       for (final Object? b in branches) {
         final Map<String, Object?> branch = b! as Map<String, Object?>;
         if (!refs.add(branch['ref']! as String)) {
-          problems.add('${n.key}: branch ${branch['ref']} twice');
+          problems.add('${n.key}: пункт ${branch['ref']} указан дважды');
         }
         if (!cities.containsKey(branch['city'])) {
-          problems.add('${n.key}: city ${branch['city']} has no names');
+          problems.add('${n.key}: у города ${branch['city']} нет названий');
         }
         if ((branch['address']! as String).trim().isEmpty) {
-          problems.add('${n.key}: a branch without an address');
+          problems.add('${n.key}: пункт без адреса');
         }
       }
     } on Object catch (error) {
-      problems.add('${n.key}: unreadable ($error)');
+      problems.add('${n.key}: файл не читается ($error)');
     }
   }
   return problems;

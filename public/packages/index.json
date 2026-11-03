@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "built": "2026-11-03T14:06:22Z",
+  "built": "2026-11-03T19:36:15Z",
   "cities": {
     "CZ": {
       "karlovy-vary": {
@@ -44,10 +44,16 @@
         "local": "Białystok"
       },
       "bielsko-biala": {
-        "uk": "Бельсько-Бяла",
+        "uk": "Бєльсько-Бяла",
         "ru": "Бельско-Бяла",
         "en": "Bielsko-Biała",
         "local": "Bielsko-Biała"
+      },
+      "borne-sulinowo": {
+        "uk": "Борне-Сулінове",
+        "ru": "Борне-Сулиново",
+        "en": "Borne Sulinowo",
+        "local": "Borne Sulinowo"
       },
       "brodnica": {
         "uk": "Бродниця",
@@ -62,7 +68,6 @@
         "local": "Bydgoszcz"
       },
       "bytom": {
-        "uk": "Битом",
         "ru": "Бытом",
         "en": "Bytom",
         "local": "Bytom"
@@ -74,8 +79,8 @@
         "local": "Chełmno"
       },
       "czaplinek": {
-        "uk": "Чаплінек",
-        "ru": "Чаплинек",
+        "uk": "Цаплінек",
+        "ru": "Цаплинек",
         "en": "Czaplinek",
         "local": "Czaplinek"
       },
@@ -86,8 +91,8 @@
         "local": "Częstochowa"
       },
       "czluchow": {
-        "uk": "Члухув",
-        "ru": "Члухув",
+        "uk": "Хлухув",
+        "ru": "Хлухув",
         "en": "Człuchów",
         "local": "Człuchów"
       },
@@ -98,8 +103,8 @@
         "local": "Dobczyce"
       },
       "dzialdowo": {
-        "uk": "Джалдово",
-        "ru": "Джалдово",
+        "uk": "Дзялдово",
+        "ru": "Дзялдово",
         "en": "Działdowo",
         "local": "Działdowo"
       },
@@ -116,7 +121,7 @@
         "local": "Gdynia"
       },
       "gliwice": {
-        "uk": "Глівіце",
+        "uk": "Гливице",
         "ru": "Гливице",
         "en": "Gliwice",
         "local": "Gliwice"
@@ -128,8 +133,8 @@
         "local": "Głogów"
       },
       "glowno": {
-        "uk": "Główno",
-        "ru": "Главно",
+        "uk": "Глувно",
+        "ru": "Глувно",
         "en": "Głowno",
         "local": "Głowno"
       },
@@ -140,13 +145,13 @@
         "local": "Gorzów Wielkopolski"
       },
       "grojec": {
-        "uk": "Грующ",
-        "ru": "Грујец",
+        "uk": "Гройець",
+        "ru": "Гройец",
         "en": "Grójec",
         "local": "Grójec"
       },
       "insko": {
-        "uk": "Іньсько",
+        "uk": "Інсько",
         "ru": "Иньско",
         "en": "Ińsko",
         "local": "Ińsko"
@@ -181,9 +186,15 @@
         "en": "Katowice",
         "local": "Katowice"
       },
+      "kielce": {
+        "uk": "Кельці",
+        "ru": "Кельце",
+        "en": "Kielce",
+        "local": "Kielce"
+      },
       "klodzko": {
         "uk": "Клодзько",
-        "ru": "Клодзько",
+        "ru": "Клодзко",
         "en": "Kłodzko",
         "local": "Kłodzko"
       },
@@ -194,20 +205,20 @@
         "local": "Kołobrzeg"
       },
       "konin": {
-        "uk": "Коніп",
+        "uk": "Конін",
         "ru": "Конин",
         "en": "Konin",
         "local": "Konin"
       },
       "kosakowo": {
-        "uk": "Косаковo",
+        "uk": "Косаково",
         "ru": "Косаково",
         "en": "Kosakowo",
         "local": "Kosakowo"
       },
       "koscierzyna": {
-        "uk": "Коscежина",
-        "ru": "Кошежина",
+        "uk": "Косьцежина",
+        "ru": "Косцежина",
         "en": "Kościerzyna",
         "local": "Kościerzyna"
       },
@@ -220,25 +231,25 @@
       "kozuchow": {
         "uk": "Кожухув",
         "ru": "Кожухув",
-        "en": "Kożuchów",
+        "en": "Kozuchow",
         "local": "Kożuchów"
       },
       "krakow": {
         "uk": "Краків",
         "ru": "Краков",
-        "en": "Kraków",
+        "en": "Krakow",
         "local": "Kraków"
       },
       "lobez": {
         "uk": "Лобез",
         "ru": "Лобез",
-        "en": "Łobez",
+        "en": "Lobez",
         "local": "Łobez"
       },
       "lodz": {
         "uk": "Лодзь",
         "ru": "Лодзь",
-        "en": "Łódź",
+        "en": "Lodz",
         "local": "Łódź"
       },
       "lublin": {
@@ -250,47 +261,47 @@
       "mikolow": {
         "uk": "Миколув",
         "ru": "Миколув",
-        "en": "Mikołów",
+        "en": "Mikolow",
         "local": "Mikołów"
       },
       "mscice": {
         "uk": "Мщице",
         "ru": "Мщице",
-        "en": "Mścice",
+        "en": "Mscice",
         "local": "Mścice"
       },
       "myslenice": {
-        "uk": "Mишленіце",
-        "ru": "Мышленице",
-        "en": "Myślenice",
+        "uk": "Мислениці",
+        "ru": "Мысленицы",
+        "en": "Myslenice",
         "local": "Myślenice"
       },
       "myslowice": {
-        "uk": "Мисловиці",
+        "uk": "Мисловице",
         "ru": "Мысловице",
-        "en": "Mysłowice",
+        "en": "Myslowice",
         "local": "Mysłowice"
       },
       "nowa-sol": {
-        "uk": "Нова Суль",
-        "ru": "Нова-Соль",
-        "en": "Nowa Sól",
+        "uk": "Нова Соль",
+        "ru": "Нова Соль",
+        "en": "Nowa Sol",
         "local": "Nowa Sól"
       },
       "piotrkow-trybunalski": {
-        "uk": "Пйотркув-Трибунальський",
+        "uk": "Пйотркув-Трибунальский",
         "ru": "Пётркув-Трибунальски",
-        "en": "Piotrków Trybunalski",
+        "en": "Piotrkow Trybunalski",
         "local": "Piotrków Trybunalski"
       },
       "plock": {
-        "uk": "Плоцьк",
+        "uk": "Плоцк",
         "ru": "Плоцк",
-        "en": "Płock",
+        "en": "Plock",
         "local": "Płock"
       },
       "police": {
-        "uk": "Полиці",
+        "uk": "Поліце",
         "ru": "Полице",
         "en": "Police",
         "local": "Police"
@@ -298,55 +309,55 @@
       "poznan": {
         "uk": "Познань",
         "ru": "Познань",
-        "en": "Poznań",
+        "en": "Poznan",
         "local": "Poznań"
       },
       "przemysl": {
-        "uk": "Перемишль",
+        "uk": "Пшемишль",
         "ru": "Пшемысль",
-        "en": "Przemyśl",
+        "en": "Przemysl",
         "local": "Przemyśl"
       },
       "przybiernow": {
-        "uk": "Пжибернув",
+        "uk": "Пшибернув",
         "ru": "Пшибернув",
-        "en": "Przybiernów",
+        "en": "Przybiernow",
         "local": "Przybiernów"
       },
       "radzymin": {
         "uk": "Радзимін",
-        "ru": "Раджимин",
+        "ru": "Радзымин",
         "en": "Radzymin",
         "local": "Radzymin"
       },
       "resko": {
-        "uk": "Реско",
-        "ru": "Реско",
+        "uk": "Ресько",
+        "ru": "Ресько",
         "en": "Resko",
         "local": "Resko"
       },
       "rumia": {
-        "uk": "Румія",
-        "ru": "Румия",
+        "uk": "Руміа",
+        "ru": "Руми",
         "en": "Rumia",
         "local": "Rumia"
       },
       "rybnik": {
-        "uk": "Рибнік",
+        "uk": "Рибник",
         "ru": "Рыбник",
         "en": "Rybnik",
         "local": "Rybnik"
       },
       "rzeszow": {
         "uk": "Жешув",
-        "ru": "Жешув",
-        "en": "Rzeszów",
+        "ru": "Жешов",
+        "en": "Rzeszow",
         "local": "Rzeszów"
       },
       "skorzewo": {
-        "uk": "Скужево",
-        "ru": "Скужево",
-        "en": "Skórzewo",
+        "uk": "Скожево",
+        "ru": "Скожево",
+        "en": "Skorzewo",
         "local": "Skórzewo"
       },
       "smolec": {
@@ -356,15 +367,15 @@
         "local": "Smolec"
       },
       "sosnowiec": {
-        "uk": "Сосновець",
+        "uk": "Сосновец",
         "ru": "Сосновец",
         "en": "Sosnowiec",
         "local": "Sosnowiec"
       },
       "starogard-gdanski": {
-        "uk": "Старогард-Гданський",
-        "ru": "Старогард-Гданьски",
-        "en": "Starogard Gdański",
+        "uk": "Стародгард-Гданьський",
+        "ru": "Стародгард-Гданьский",
+        "en": "Starogard Gdanski",
         "local": "Starogard Gdański"
       },
       "stepnica": {
@@ -374,15 +385,15 @@
         "local": "Stepnica"
       },
       "steszew": {
-        "uk": "Стеншев",
-        "ru": "Стеншев",
-        "en": "Stęszew",
+        "uk": "Стенжев",
+        "ru": "Стенджев",
+        "en": "Steszew",
         "local": "Stęszew"
       },
       "sulechow": {
         "uk": "Сулехув",
         "ru": "Сулехув",
-        "en": "Sulechów",
+        "en": "Sulechow",
         "local": "Sulechów"
       },
       "swidnica": {
@@ -436,61 +447,61 @@
       "warszawa": {
         "uk": "Варшава",
         "ru": "Варшава",
-        "en": "Warszawa",
+        "en": "Warsaw",
         "local": "Warszawa"
       },
       "wegorzyno": {
         "uk": "Венгожино",
-        "ru": "Венгожино",
+        "ru": "Вёгожино",
         "en": "Węgorzyno",
         "local": "Węgorzyno"
       },
       "wejherowo": {
-        "uk": "Вейхерово",
+        "uk": "Вейгерово",
         "ru": "Вейхерово",
         "en": "Wejherowo",
         "local": "Wejherowo"
       },
       "wieliczka": {
         "uk": "Велічка",
-        "ru": "Величка",
+        "ru": "Велички",
         "en": "Wieliczka",
         "local": "Wieliczka"
       },
       "wloclawek": {
         "uk": "Влоцлавек",
         "ru": "Влоцлавек",
-        "en": "Włocławek",
+        "en": "Wloclawek",
         "local": "Włocławek"
       },
       "wolbrom": {
-        "uk": "Вольбром",
-        "ru": "Вольбром",
+        "uk": "Волбром",
+        "ru": "Волбром",
         "en": "Wolbrom",
         "local": "Wolbrom"
       },
       "wolomin": {
-        "uk": "Воломин",
+        "uk": "Воломін",
         "ru": "Воломин",
-        "en": "Wołomin",
+        "en": "Wolomin",
         "local": "Wołomin"
       },
       "wroclaw": {
         "uk": "Вроцлав",
         "ru": "Вроцлав",
-        "en": "Wrocław",
+        "en": "Wroclaw",
         "local": "Wrocław"
       },
       "wyszkow": {
-        "uk": "Вишкув",
-        "ru": "Вышкув",
-        "en": "Wyszków",
+        "uk": "Вишків",
+        "ru": "Вышков",
+        "en": "Wyszkow",
         "local": "Wyszków"
       },
       "zabkowice-slaskie": {
-        "uk": "Ґомбковіце-Шльонські",
-        "ru": "Гомбковице-Шленьске",
-        "en": "Ząbkowice Śląskie",
+        "uk": "Ємбковіце-Шльонські",
+        "ru": "Эмбковице-Шленьске",
+        "en": "Zabkowice Slaskie",
         "local": "Ząbkowice Śląskie"
       },
       "zabrze": {
@@ -508,19 +519,19 @@
       "zary": {
         "uk": "Жари",
         "ru": "Жары",
-        "en": "Żary",
+        "en": "Zary",
         "local": "Żary"
       },
       "zgierz": {
         "uk": "Згеж",
-        "ru": "Згеж",
+        "ru": "Згерж",
         "en": "Zgierz",
         "local": "Zgierz"
       },
       "zielona-gora": {
-        "uk": "Зелена Гура",
+        "uk": "Зелена-Гура",
         "ru": "Зелёна-Гура",
-        "en": "Zielona Góra",
+        "en": "Zielona Gora",
         "local": "Zielona Góra"
       }
     },
@@ -740,12 +751,13 @@
       "kind": "lab",
       "country": "PL",
       "site": "https://synevo.pl/",
-      "version": "a7ba56abeeddee52",
+      "version": "59f511888c3b151e",
       "cities": {
         "bardo": 1,
         "barlinek": 1,
         "bialystok": 1,
         "bielsko-biala": 2,
+        "borne-sulinowo": 1,
         "brodnica": 1,
         "bydgoszcz": 5,
         "bytom": 1,
@@ -768,6 +780,7 @@
         "jelcz-laskowice": 1,
         "kalisz-pomorski": 1,
         "katowice": 4,
+        "kielce": 1,
         "klodzko": 1,
         "kolobrzeg": 1,
         "konin": 2,
@@ -810,7 +823,7 @@
         "tomaszow-lubelski": 1,
         "torun": 6,
         "tychy": 1,
-        "warszawa": 23,
+        "warszawa": 24,
         "wegorzyno": 1,
         "wejherowo": 1,
         "wieliczka": 1,
@@ -833,7 +846,7 @@
       "kind": "lab",
       "country": "UA",
       "site": "https://www.synevo.ua/",
-      "version": "b4ed67e2be40a5a6",
+      "version": "8f51e84f7f17754f",
       "cities": {
         "kyiv": 65
       },
@@ -977,12 +990,12 @@
       "sha256": "92cfd258bbc6832eb2b9e2d0fe5bdcf03e01fbf21c1401fb99f95ae6897a9a5e"
     },
     "synevo-pl.json": {
-      "size": 92335,
-      "sha256": "a7ba56abeeddee521ff4604d925a7be48b39dd7f18dd279ae4a5bb76120f5a49"
+      "size": 92566,
+      "sha256": "59f511888c3b151ef71db95b8013d1a574ef87e8f4570c163f63a47e89ecdf53"
     },
     "synevo-ua.json": {
-      "size": 12597,
-      "sha256": "b4ed67e2be40a5a653fdf133d162dc136c7e0a509654c7d3fe38061ef828690e"
+      "size": 12599,
+      "sha256": "8f51e84f7f17754fcfe623975e6dfff624ba570f805e76ba58878cd7c3966731"
     },
     "viva-clinic.json": {
       "size": 5440,
