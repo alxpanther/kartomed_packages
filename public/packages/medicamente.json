@@ -21,12 +21,16 @@
  "phones": [
   {
    "value": "+420253253252",
-   "label": "Колл-центр"
+   "label": "Customer Support"
   }
  ],
  "emails": [
   {
    "value": "info@medicamente.cz"
+  },
+  {
+   "value": "info@medicamentexample.cz",
+   "label": "Customer Support"
   }
  ],
  "branches": [
@@ -68,7 +72,7 @@
      "10:00-15:00"
     ]
    },
-   "hoursNote": "Указаны часы работы колл-центра."
+   "hoursNote": "Hours are for the call centre (Время работы колл-центра), not the clinic itself."
   },
   {
    "ref": "1811ac5a5268",
@@ -108,7 +112,7 @@
      "10:00-15:00"
     ]
    },
-   "hoursNote": "Указаны часы работы колл-центра."
+   "hoursNote": "Hours are for the call centre (Время работы колл-центра), not the clinic itself."
   }
  ]
 }

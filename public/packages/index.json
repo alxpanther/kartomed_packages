@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "built": "2026-10-27T13:52:38Z",
+  "built": "2026-11-03T14:06:22Z",
   "cities": {
     "CZ": {
       "karlovy-vary": {
@@ -436,7 +436,7 @@
       "warszawa": {
         "uk": "Варшава",
         "ru": "Варшава",
-        "en": "Warsaw",
+        "en": "Warszawa",
         "local": "Warszawa"
       },
       "wegorzyno": {
@@ -569,7 +569,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://adonis.com.ua/",
-      "version": "326b053f548e0fb3",
+      "version": "451ca2eed4260645",
       "cities": {
         "kyiv": 4,
         "obukhiv": 1,
@@ -593,7 +593,7 @@
       "kind": "clinic",
       "country": "PL",
       "site": "https://astramed.waw.pl/",
-      "version": "9491f8beb31f86bc",
+      "version": "6cb8b83e8b47b3d1",
       "cities": {
         "warszawa": 6
       },
@@ -604,7 +604,7 @@
       "kind": "lab",
       "country": "UA",
       "site": "https://dila.ua/",
-      "version": "88a44ad8abcba4e3",
+      "version": "67ffb63e9aae461a",
       "cities": {
         "kyiv": 115
       },
@@ -615,7 +615,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://dobrobut.com/",
-      "version": "275caceccb04dfe3",
+      "version": "733f21048f26a355",
       "cities": {
         "brovary": 1,
         "irpin": 1,
@@ -640,7 +640,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://harmony-health.com.ua/",
-      "version": "d54e25014794bfa6",
+      "version": "6a7f6277093e2e16",
       "cities": {
         "kyiv": 11
       },
@@ -651,7 +651,7 @@
       "kind": "lab",
       "country": "ME",
       "site": "https://www.invitro.co.me/",
-      "version": "d5200311b0509e7b",
+      "version": "01840e0375d3dff4",
       "cities": {
         "podgorica": 3
       }
@@ -661,7 +661,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://isida.ua/",
-      "version": "0d40d22d4612e59d",
+      "version": "7529a0897b0a6315",
       "cities": {
         "kyiv": 3,
         "uzhhorod": 1
@@ -672,7 +672,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://www.meddiagnostica.com.ua/",
-      "version": "150f5d0836453ed6",
+      "version": "ddc068aba3adfe4d",
       "cities": {
         "kyiv": 1
       },
@@ -683,7 +683,7 @@
       "kind": "clinic",
       "country": "CZ",
       "site": "https://medicamente.cz/",
-      "version": "d812c01d1fed2319",
+      "version": "16df61324e1ddd92",
       "cities": {
         "karlovy-vary": 1,
         "praha": 1
@@ -695,7 +695,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://medikom.ua/",
-      "version": "e4d7507e492bd047",
+      "version": "fbfd46f5cbc7be99",
       "cities": {
         "kyiv": 4
       },
@@ -706,7 +706,7 @@
       "kind": "lab",
       "country": "UA",
       "site": "https://medlabtest.ua/",
-      "version": "573da4745b39d192",
+      "version": "c0aa1e9edef95055",
       "cities": {
         "kyiv": 40
       },
@@ -717,7 +717,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://oxford-med.com.ua/",
-      "version": "faf2227a31223ebe",
+      "version": "f43a0d16b14df3be",
       "cities": {
         "irpin": 1,
         "kyiv": 13
@@ -729,7 +729,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://smartmedicalcenter.ua/",
-      "version": "748f1b845db22e02",
+      "version": "92cfd258bbc6832e",
       "cities": {
         "kyiv": 3
       },
@@ -844,7 +844,7 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://viva.clinic/",
-      "version": "5d4017e5dcf5f451",
+      "version": "ef24b640b7561f38",
       "cities": {
         "kyiv": 12
       },
@@ -853,40 +853,40 @@
   },
   "files": {
     "adonis.json": {
-      "size": 3509,
-      "sha256": "326b053f548e0fb376663196171b66b2bb50adc8bd718dced3e8587433a6cbb1"
+      "size": 3589,
+      "sha256": "451ca2eed42606452f8fde04c2874e68503581d0b405dd68082649d6f12df2bc"
     },
     "astra-medika.json": {
       "size": 884,
       "sha256": "73260e3d039e7274888a3a5eaca07670eacaa3e562e6e208c44d8ee96ebc0653"
     },
     "astramed-warszawa.json": {
-      "size": 3073,
-      "sha256": "9491f8beb31f86bc7e4a902fa62cb089a0762436bd318e9247f773faadd2b302"
+      "size": 3002,
+      "sha256": "6cb8b83e8b47b3d12c12bae3f22e9807c01e78c201b6c66ed643073cb22a456e"
     },
     "dila.json": {
-      "size": 50277,
-      "sha256": "88a44ad8abcba4e3eb8496a1d3d6ca6afc07b8cbfcf2834e44c68e9ad0575bbe"
+      "size": 49285,
+      "sha256": "67ffb63e9aae461a4c7a53274def618845c8ac766d30254e09b0b3bcb4d9c7da"
     },
     "dobrobut.json": {
-      "size": 8652,
-      "sha256": "275caceccb04dfe3155d46999732b3ef9955d73057d0afad987d07af734f5f0a"
+      "size": 8351,
+      "sha256": "733f21048f26a355775c8342b2b12be8834159f60ffabbde99c720f8932664e3"
     },
     "dobroclinic.json": {
       "size": 778,
       "sha256": "6f8aa4c2240f8ed747441aeafe02d339a09c1ae4327f1a5a92253c92d08c4cae"
     },
     "harmony-health.json": {
-      "size": 5811,
-      "sha256": "d54e25014794bfa63f9ac12aa58f43975c8f13e04980d0f047fc9dc3c1e06642"
+      "size": 5737,
+      "sha256": "6a7f6277093e2e163b68c66f0615227f85eb187aa9dee675c715cf1832cb69c8"
     },
     "invitro-me.json": {
-      "size": 2239,
-      "sha256": "d5200311b0509e7bc9324b449fa0c22e9817da408b4e46ab28ce5e6def7ecff9"
+      "size": 2534,
+      "sha256": "01840e0375d3dff4adfabc977233e098e88e118f5a201adc05add05f50db84be"
     },
     "isida.json": {
-      "size": 2553,
-      "sha256": "0d40d22d4612e59d665f5ae504a61dad98340740aaaf38569057f04d9babf973"
+      "size": 2520,
+      "sha256": "7529a0897b0a631599c8e32313d94fc2fc009ef1e4d0b5a118e37bb704a49ab4"
     },
     "logos/adonis.png": {
       "size": 5421,
@@ -953,28 +953,28 @@
       "sha256": "1eb211e9f44fe5d2cd030cbc6b3dd4aec683bffe92542341cabc4cfe3d547092"
     },
     "meddiagnostica.json": {
-      "size": 1753,
-      "sha256": "150f5d0836453ed63a00fcc495509b451656dcf5ccbb2150d5837c4600735022"
+      "size": 1735,
+      "sha256": "ddc068aba3adfe4dac63f8c80ccb3b0222a438b80e3f7daa220922d7e07cbde2"
     },
     "medicamente.json": {
-      "size": 1775,
-      "sha256": "d812c01d1fed2319e7ecfaf5964d2652a044ce97ad1b68e7dce40357cff87237"
+      "size": 1937,
+      "sha256": "16df61324e1ddd92db3ecc611b7089c5c3f8cc8829391c4452fbb4b0d5d0cc2b"
     },
     "medikom.json": {
-      "size": 3055,
-      "sha256": "e4d7507e492bd047157b086e8a2eaf98edc62778f5f3a7a1ab40391faf34e2e2"
+      "size": 2497,
+      "sha256": "fbfd46f5cbc7be9951fa6a699a2e1ab4acaef3fa967d2c450fcad09e08e37827"
     },
     "medlabtest.json": {
-      "size": 18999,
-      "sha256": "573da4745b39d19206b518ef16bf39117eb818cf656e166d60d73ebb7eabca36"
+      "size": 18965,
+      "sha256": "c0aa1e9edef950552572f2cb466996888a41d0b4266202789457355bfed1142b"
     },
     "oxford-medical.json": {
-      "size": 9591,
-      "sha256": "faf2227a31223ebe486ffd7cf8b2a80e959bbbe2b1e11436dbc1b5977da03e72"
+      "size": 7229,
+      "sha256": "f43a0d16b14df3be0347c0696b38cac62101049b24a6caeb9122794a8466e7e7"
     },
     "smart-medical-center.json": {
-      "size": 2462,
-      "sha256": "748f1b845db22e02064e616e7c2e89309a40bdb61c07184c278e8cefa4513de8"
+      "size": 2252,
+      "sha256": "92cfd258bbc6832eb2b9e2d0fe5bdcf03e01fbf21c1401fb99f95ae6897a9a5e"
     },
     "synevo-pl.json": {
       "size": 92335,
@@ -985,8 +985,8 @@
       "sha256": "b4ed67e2be40a5a653fdf133d162dc136c7e0a509654c7d3fe38061ef828690e"
     },
     "viva-clinic.json": {
-      "size": 5498,
-      "sha256": "5d4017e5dcf5f451e4719010e22b4d7978da36674b79794e0663e10ad8e06c2e"
+      "size": 5440,
+      "sha256": "ef24b640b7561f38f86a9204dc8c5ec93ef044fe3f79b1d55ad4a9f911b0e52a"
     }
   }
 }

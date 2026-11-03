@@ -21,13 +21,16 @@
    "address": "Bulevar Ivana Crnojevića 58",
    "phones": [
     {
-     "value": "+38220231822"
+     "value": "+38220231822",
+     "label": "telefon"
     },
     {
-     "value": "+38220231833"
+     "value": "+38220231833",
+     "label": "telefon"
     },
     {
-     "value": "+38267231833"
+     "value": "+38267231833",
+     "label": "telefon"
     },
     {
      "value": "+38220240197",
@@ -40,10 +43,12 @@
    ],
    "emails": [
     {
-     "value": "invitrolaboratorija@yahoo.com"
+     "value": "invitrolaboratorija@yahoo.com",
+     "label": "e-mail"
     },
     {
-     "value": "invitrocg@t-com.me"
+     "value": "invitrocg@t-com.me",
+     "label": "e-mail"
     }
    ],
    "schedule": {
@@ -73,10 +78,12 @@
    "address": "V proleterske bb, Stari aerodrom",
    "phones": [
     {
-     "value": "+38220656900"
+     "value": "+38220656900",
+     "label": "telefon"
     },
     {
-     "value": "+38267656900"
+     "value": "+38267656900",
+     "label": "telefon"
     },
     {
      "value": "+38220656997",
@@ -85,7 +92,8 @@
    ],
    "emails": [
     {
-     "value": "invitroplus@gmail.com"
+     "value": "invitroplus@gmail.com",
+     "label": "e-mail"
     }
    ],
    "schedule": {
@@ -115,18 +123,22 @@
    "address": "Ilije Plamenca BB",
    "phones": [
     {
-     "value": "+38220652200"
+     "value": "+38220652200",
+     "label": "telefon"
     },
     {
-     "value": "+38267652200"
+     "value": "+38267652200",
+     "label": "telefon"
     }
    ],
    "emails": [
     {
-     "value": "invitrolaboratorija.z@gmail.com"
+     "value": "invitrolaboratorija.z@gmail.com",
+     "label": "e-mail"
     },
     {
-     "value": "invitrolaboratorija@gmail.com"
+     "value": "invitrolaboratorija@gmail.com",
+     "label": "e-mail"
     }
    ],
    "schedule": {

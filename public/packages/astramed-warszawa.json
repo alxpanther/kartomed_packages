@@ -14,14 +14,12 @@
  },
  "phones": [
   {
-   "value": "+48513789555",
-   "label": "Регистрация"
+   "value": "+48513789555"
   }
  ],
  "emails": [
   {
-   "value": "biuro.astramed@gmail.com",
-   "label": "Общий e-mail"
+   "value": "biuro.astramed@gmail.com"
   }
  ],
  "branches": [
