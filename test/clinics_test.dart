@@ -83,6 +83,30 @@ void main() {
     expect(text, isNot(contains('var a')));
   });
 
+  test('sameBuilding joins one building written two ways only', () {
+    expect(
+      sameBuilding('Коновальця, 3', 'вулиця Євгена Коновальця, 3'),
+      isTrue,
+    );
+    expect(
+      sameBuilding('вул. С. Воробкевича, 33', 'вулиця Воробкевича, 33'),
+      isTrue,
+    );
+    expect(
+      sameBuilding('пр. Незалежності 121-А', 'проспект Незалежності, 121А'),
+      isTrue,
+    );
+    expect(
+      sameBuilding('пр. Незалежності 121-А', 'пр. Незалежності 121-Б'),
+      isFalse,
+    );
+    expect(
+      sameBuilding('Євгена Сверстюка 1', 'Євгена Сверстюка 1, (2-й корпус)'),
+      isFalse,
+    );
+    expect(sameBuilding('вул. Пирогова, 34в', 'вул. Пирогова, 35'), isFalse);
+  });
+
   test('chunks cut a long text at line ends', () {
     final String text = List<String>.generate(
       10,

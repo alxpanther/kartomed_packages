@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "built": "2026-11-03T19:36:15Z",
+  "built": "2026-11-13T09:58:04Z",
   "cities": {
     "CZ": {
       "karlovy-vary": {
@@ -542,11 +542,47 @@
         "en": "Brovary",
         "local": "Бровари"
       },
+      "cherkasy": {
+        "uk": "Черкаси",
+        "ru": "Черкассы",
+        "en": "Cherkasy",
+        "local": "Черкаси"
+      },
+      "chernivtsi": {
+        "uk": "Чернівці",
+        "ru": "Черновцы",
+        "en": "Chernivtsi",
+        "local": "Чернівці"
+      },
+      "dnipro": {
+        "uk": "Дніпро",
+        "ru": "Днепр",
+        "en": "Dnipro",
+        "local": "Дніпро"
+      },
       "irpin": {
         "uk": "Ірпінь",
         "ru": "Ирпень",
         "en": "Irpin",
         "local": "Ірпінь"
+      },
+      "ivano-frankivsk": {
+        "uk": "Івано-Франківськ",
+        "ru": "Ивано-Франковск",
+        "en": "Ivano-Frankivsk",
+        "local": "Івано-Франківськ"
+      },
+      "khmelnytskyi": {
+        "uk": "Хмельницький",
+        "ru": "Хмельницкий",
+        "en": "Khmelnytskyi",
+        "local": "Хмельницький"
+      },
+      "kryvyi-rih": {
+        "uk": "Кривий Ріг",
+        "ru": "Кривой Рог",
+        "en": "Kryvyi Rih",
+        "local": "Кривий Ріг"
       },
       "kyiv": {
         "uk": "Київ",
@@ -554,11 +590,35 @@
         "en": "Kyiv",
         "local": "Київ"
       },
+      "lutsk": {
+        "uk": "Луцьк",
+        "ru": "Луцк",
+        "en": "Lutsk",
+        "local": "Луцьк"
+      },
+      "lviv": {
+        "uk": "Львів",
+        "ru": "Львов",
+        "en": "Lviv",
+        "local": "Львів"
+      },
       "obukhiv": {
         "uk": "Обухів",
         "ru": "Обухов",
         "en": "Obukhiv",
         "local": "Обухів"
+      },
+      "odesa": {
+        "uk": "Одеса",
+        "ru": "Одесса",
+        "en": "Odesa",
+        "local": "Одеса"
+      },
+      "rivne": {
+        "uk": "Рівне",
+        "ru": "Ровно",
+        "en": "Rivne",
+        "local": "Рівне"
       },
       "sofiivska-borshchahivka": {
         "uk": "Софіївська Борщагівка",
@@ -566,11 +626,29 @@
         "en": "Sofiivska Borshchahivka",
         "local": "Софіївська Борщагівка"
       },
+      "ternopil": {
+        "uk": "Тернопіль",
+        "ru": "Тернополь",
+        "en": "Ternopil",
+        "local": "Тернопіль"
+      },
       "uzhhorod": {
         "uk": "Ужгород",
         "ru": "Ужгород",
         "en": "Uzhhorod",
         "local": "Ужгород"
+      },
+      "vinnytsia": {
+        "uk": "Вінниця",
+        "ru": "Винница",
+        "en": "Vinnytsia",
+        "local": "Вінниця"
+      },
+      "zaporizhzhia": {
+        "uk": "Запоріжжя",
+        "ru": "Запорожье",
+        "en": "Zaporizhzhia",
+        "local": "Запоріжжя"
       }
     }
   },
@@ -728,10 +806,22 @@
       "kind": "clinic",
       "country": "UA",
       "site": "https://oxford-med.com.ua/",
-      "version": "f43a0d16b14df3be",
+      "version": "f4601fb1b0525147",
       "cities": {
+        "chernivtsi": 3,
+        "dnipro": 4,
         "irpin": 1,
-        "kyiv": 13
+        "ivano-frankivsk": 3,
+        "khmelnytskyi": 2,
+        "kryvyi-rih": 2,
+        "kyiv": 13,
+        "lutsk": 2,
+        "lviv": 3,
+        "odesa": 4,
+        "rivne": 3,
+        "ternopil": 4,
+        "vinnytsia": 1,
+        "zaporizhzhia": 1
       },
       "logo": "logos/oxford-medical.png"
     },
@@ -852,6 +942,19 @@
       },
       "logo": "logos/synevo-ua.png"
     },
+    "uvt-clinic": {
+      "name": "Ocsarat Medical",
+      "kind": "clinic",
+      "country": "UA",
+      "site": "https://uvt-clinic.com.ua/",
+      "version": "774e19150a4525d1",
+      "cities": {
+        "cherkasy": 1,
+        "kryvyi-rih": 1,
+        "odesa": 2
+      },
+      "logo": "logos/uvt-clinic.png"
+    },
     "viva-clinic": {
       "name": "Віва",
       "kind": "clinic",
@@ -961,6 +1064,10 @@
       "size": 1139,
       "sha256": "7618fa12b34fb165ceb07ccc77eea917f311f7406b33154fe7b98e8965910684"
     },
+    "logos/uvt-clinic.png": {
+      "size": 28210,
+      "sha256": "4f962b6c5535b6532c86104688f6dd572e9732df30a87347203c6b10acc56290"
+    },
     "logos/viva-clinic.png": {
       "size": 7096,
       "sha256": "1eb211e9f44fe5d2cd030cbc6b3dd4aec683bffe92542341cabc4cfe3d547092"
@@ -982,8 +1089,8 @@
       "sha256": "c0aa1e9edef950552572f2cb466996888a41d0b4266202789457355bfed1142b"
     },
     "oxford-medical.json": {
-      "size": 7229,
-      "sha256": "f43a0d16b14df3be0347c0696b38cac62101049b24a6caeb9122794a8466e7e7"
+      "size": 30397,
+      "sha256": "f4601fb1b0525147e03ee7fae26ad80b2cefbec7c813b6a198e79e0537483d76"
     },
     "smart-medical-center.json": {
       "size": 2252,
@@ -996,6 +1103,10 @@
     "synevo-ua.json": {
       "size": 12599,
       "sha256": "8f51e84f7f17754fcfe623975e6dfff624ba570f805e76ba58878cd7c3966731"
+    },
+    "uvt-clinic.json": {
+      "size": 3179,
+      "sha256": "774e19150a4525d13baf4ba57644787c89383fe169ee816d71eea79451d787e1"
     },
     "viva-clinic.json": {
       "size": 5440,

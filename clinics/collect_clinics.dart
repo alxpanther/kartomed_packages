@@ -238,9 +238,22 @@ Future<Network> _read(
   if (branches.isEmpty) {
     throw ExtractionFailed('не найдено ни одного пункта');
   }
+  // The same building named in two spellings on the page: one branch.
+  final List<Branch> joined = <Branch>[];
+  for (final Branch b in branches.values) {
+    final int same = joined.indexWhere(
+      (Branch j) =>
+          j.city.key == b.city.key && sameBuilding(j.address, b.address),
+    );
+    if (same < 0) {
+      joined.add(b);
+    } else {
+      joined[same] = _join(joined[same], b);
+    }
+  }
   return Network(
     source: source,
-    branches: branches.values.toList(),
+    branches: joined,
     phones: _phones(phones, source.country),
     emails: _emails(emails),
   );

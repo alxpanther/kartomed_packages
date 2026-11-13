@@ -220,6 +220,13 @@ String normalizeAddress(String address) => address
 /// The local name, not the English one: the model writes Warsaw on one page
 /// and Warszawa on another, while the local name stays the same.
 String cityKey(String local) {
+  // One city, two spellings: the Russian and the Ukrainian name of Odesa.
+  const Map<String, String> sameCity = <String, String>{'odessa': 'odesa'};
+  final String key = _cityKey(local);
+  return sameCity[key] ?? key;
+}
+
+String _cityKey(String local) {
   const Map<String, String> plain = <String, String>{
     // Ukrainian (the national transliteration), and the Russian letters.
     'а': 'a', 'б': 'b', 'в': 'v', 'г': 'h', 'ґ': 'g', 'д': 'd', 'е': 'e',
@@ -323,4 +330,43 @@ Map<String, List<String>> normalizeSchedule(Map<String, List<String>> days) {
           case final List<String> spans when spans.isNotEmpty)
         d.key: spans,
   };
+}
+
+/// Whether [a] and [b] name one building of a city: the same house number,
+/// and the street words of one are all in the other — «Коновальця, 3» and
+/// «вулиця Євгена Коновальця, 3». Different buildings (another corpus, another
+/// house letter) are never the same.
+bool sameBuilding(String a, String b) {
+  if (a.toLowerCase().contains('корп') || b.toLowerCase().contains('корп')) {
+    return false;
+  }
+  final (String? houseA, Set<String> wordsA) = _house(a);
+  final (String? houseB, Set<String> wordsB) = _house(b);
+  if (houseA == null || houseA != houseB || wordsA.isEmpty || wordsB.isEmpty) {
+    return false;
+  }
+  return wordsA.containsAll(wordsB) || wordsB.containsAll(wordsA);
+}
+
+/// The house number (the last token with a digit) and the street words
+/// (letters, longer than one) of [address].
+(String?, Set<String>) _house(String address) {
+  final List<String> tokens = address
+      .toLowerCase()
+      .replaceAll('-', '')
+      .replaceAll(RegExp(r"[.,()'’]"), ' ')
+      .split(RegExp(r'\s+'))
+      .where((String t) => t.isNotEmpty && !_streetWords.contains(t))
+      .toList();
+  final String? house =
+      tokens
+          .lastWhere((String t) => t.contains(RegExp(r'\d')), orElse: () => '')
+          .isEmpty
+      ? null
+      : tokens.lastWhere((String t) => t.contains(RegExp(r'\d')));
+  final Set<String> words = <String>{
+    for (final String t in tokens)
+      if (!t.contains(RegExp(r'\d')) && t.length > 1) t,
+  };
+  return (house, words);
 }

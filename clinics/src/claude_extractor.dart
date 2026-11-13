@@ -172,6 +172,12 @@ out every branch (address) of this network that the text names. Use only what
 the text says; never invent or guess an address, phone or hours. Leave a field
 empty ("" or []) when the text does not give it.
 
+Write each address once. A page often repeats an address (a list and a map
+card, or the same branch in two spellings): give it a single branch with the
+fullest data of the copies. Two different buildings are two branches even when
+the street and the number are the same: «2-й корпус», «корпус 2», a letter or
+a separate entrance named on the page.
+
 For each branch:
 - cityEn, cityUk, cityRu, cityLocal: the city of the branch in English
   (common English spelling: Kyiv, Warsaw, Prague, Podgorica), Ukrainian,
